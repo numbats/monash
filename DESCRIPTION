@@ -1,0 +1,30 @@
+Package: monash
+Title: Consolidated tools and templates for staffs at Monash University 
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Emi",
+           family = "Tanaka",
+           role = c("aut", "cre"),
+           email = "dr.emi.tanaka@gmail.com",
+           comment = c(ORCID = "0000-0002-1455-259X"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    rprojroot,
+    rstudioapi,
+    fs,
+    usethis,
+    rlang,
+    vctrs,
+    whisker,
+    purrr,
+    scales
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

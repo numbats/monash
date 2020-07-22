@@ -1,0 +1,10 @@
+name: ""
+output_dir: "docs"
+exclude: ["*.Rmd", "*.csv", "*.R", "_*", ".*", "*.Rproj", "LICENSE", "README.md"]
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: assets/footer.html
+    css: assets/styles.css
