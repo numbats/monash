@@ -23,7 +23,8 @@ Imports:
     vctrs,
     whisker,
     purrr,
-    scales
+    scales,
+    desc
 Suggests: 
     knitr,
     rmarkdown
