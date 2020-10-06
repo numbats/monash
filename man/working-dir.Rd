@@ -61,6 +61,6 @@ Functions to create a default directory structure.
 
 \item \code{create_workshop_dir}: Create a skeleton workshop directory.
 
-\item \code{create_teaching_dir}: Create a skeleton workshop directory.
+\item \code{create_teaching_dir}: Create a skeleton teaching directory.
 }}
 

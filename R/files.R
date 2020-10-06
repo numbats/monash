@@ -23,3 +23,10 @@ use_file <- function(file, new_path) {
   }
   file_copy(path, new_path)
 }
+
+#' Open .releaseignore file
+#'
+#' @export
+edit_release_ignore <- function() {
+  invisible(usethis::edit_file(".releaseignore"))
+}

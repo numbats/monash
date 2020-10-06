@@ -327,3 +327,26 @@ is_in_proj <- function(path) {
 proj <- new.env(parent = emptyenv())
 
 proj_get_ <- function() proj$cur
+
+
+# own
+
+ui_select <- function(choices,
+                      msg = "Select a number from above or type 'q' to quit: ",
+                      return_values = seq_along(choices)) {
+
+  in_range <- function(x) x %in% as.character(seq_along(choices))
+  selection <- 0
+  exit <- FALSE
+  while(!in_range(selection) & !exit) {
+    cat(paste0(purrr::imap_chr(choices, ~paste0(.y, ". ", .x)),
+               collapse = "\n"))
+    selection <- readline(prompt = msg)
+    if(selection %in% c("q", "Q")) exit <- TRUE
+    if(!in_range(selection) & selection!="q") {
+      cat("Selection is invalid.")
+    }
+  }
+  if(exit) abort("Exiting")
+  return_values[as.numeric(selection)]
+}

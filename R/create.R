@@ -61,7 +61,7 @@ create_workshop_dir <- function(name, full_name = name,
                   rstudio = rstudio, layout = layout, open = open)
 }
 
-#' @describeIn working-dir Create a skeleton workshop directory.
+#' @describeIn working-dir Create a skeleton teaching directory.
 #' @export
 create_teaching_dir <- function(code, name = code, full_name = name,
                                 destdir = getOption("monash.teaching_dir"),
