@@ -1,6 +1,6 @@
 
 
-#' @title Get Monash logo
+#' Get Monash logo
 #'
 #' @description
 #' A quick way of getting the Monash logo.
@@ -13,7 +13,6 @@
 #' @param overwrite TRUE for overwriting (should it enquire?), FALSE for not. Not implemented yet.
 #' @param filename A new file name for the logo. Not implemented yet.
 #'
-#' @name logo
 #' @source https://www.monash.edu/brandbook/brand-elements/our-logo
 #' @export
 logo_get <- function(path = ".",
@@ -57,22 +56,6 @@ logo_path <- function(stack = TRUE,
 
 
 
-#' #' @rdname logo A wrapper to insert logo.
-#' #' @export
-#' logo_insert <- function(path = NULL,
-#'                         stack = TRUE,
-#'                         color = c("blue", "black", "white"),
-#'                         type = c("png", "jpg", "ai"),
-#'                         hq = FALSE) {
-#'   path <- path %||% rmarkdown::metadata$lib_dir %||% "."
-#'   knitr::include_graphics(logo_get(path = path,
-#'                                    stack = stack,
-#'                                    color = color,
-#'                                    type = type,
-#'                                    hq = hq,
-#'                                    overwrite = TRUE))
-#' }
-
 
 logo_find <- function(logo_filename) {
   path <- tryCatch(
@@ -89,8 +72,11 @@ logo_find <- function(logo_filename) {
 
 #' NUMBAT logo
 #'
+#' @description
+#'
 #' From Di: some history of the file: it is a photo that I took at
 #' Healesville zoon when they still had numbats. I had to paint in
 #' the legs so it looked more complete. and photoshop was used to make
 #' it a little ore artistic
-NULL
+
+

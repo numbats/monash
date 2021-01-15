@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Roboto+Mono|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+  color: #006DAE;
+}
+
+thead th {
+  background-color: #006DAE!important;
+  color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+blockquote {
+  font-family: 'Roboto Slab', monospace;
+}
+
+.navbar-default,
+.navbar-toggle,
+.navbar-toggle:focus {
+  background-color: #006DAE;
+}
+
+.navbar-nav > .active > a,
+.navbar-toggle:hover,
+.navbar-nav>li>a:hover {
+  background-color: #006DAE!important;
+}
+
+
+#sticky-footer {
+  background-color: #006DAE;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+}
+
+.d-none {
+  display: none!important;
+}
+
+@media print {
+   .navbar {
+        display: block;
+        position: absolute;
+        top:0;
+        border-width:0 !important;
+        min-height: 0!important;
+        border-bottom: 1px solid black!important;
+    }
+    .navbar-toggle {
+        display:none;
+    }
+    /* to remove the href printing */
+    a[href]:after {
+      content: none !important;
+    }
+
+    #sticky-footer {
+      display: none !important;
+    }
+
+    .d-print-block {
+      display: block!important;
+    }
+}

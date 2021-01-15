@@ -1,0 +1,34 @@
+folder:
+  site:
+    .files:
+      - "`r system.file('assets', 'site', 'styles.css', package = 'monash')`"
+      - "`r system.file('templates', '_course.yml', package = 'monash')`"
+      - "`r system.file('templates', '_site.yml', package = 'monash')`"
+  lectures:
+    images:
+    assets:
+      .files:
+        - "`r system.file('assets', 'slides', 'titleslide.Rmd', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'endslide.Rmd', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'animate.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'boxes.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'custom.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'monash-brand.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'monash-fonts.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'monash-logo.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'panelset.css', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'panelset-modified.js', package = 'monash')`"
+        - "`r system.file('assets', 'slides', 'table.css', package = 'monash')`"
+  tutorial:
+    images:
+  assessments:
+  data:
+  grades:
+  misc:
+  .files:
+    - "`r system.file('templates', '_public.yml', package = 'monash')`"
+    - "`r system.file('templates', 'next-time.md', package = 'monash')`"
+    - "`r system.file('templates', 'README.md', package = 'monash')`"
+
+
+

@@ -10,15 +10,17 @@
 create_bare_dir(
   code,
   name = code,
+  proj_name = paste0(name, "-private"),
   full_name = name,
   destdir = code,
-  layout = function() { },
+  layout = NULL,
   rstudio = rstudioapi::isAvailable(),
   open = interactive()
 )
 
 create_workshop_dir(
-  name,
+  code,
+  name = code,
   full_name = name,
   destdir = getOption("monash.workshop_dir"),
   rstudio = TRUE,
@@ -33,7 +35,7 @@ create_teaching_dir(
   destdir = getOption("monash.teaching_dir"),
   rstudio = TRUE,
   open = TRUE,
-  layout = layout_teaching_dir
+  layout = NULL
 )
 }
 \arguments{
@@ -41,12 +43,13 @@ create_teaching_dir(
 
 \item{name}{the short name of the course. There should be no spaces.}
 
+\item{proj_name}{the project name for Rpro}
+
 \item{full_name}{the full name of the course e.g. Wild-Caught Data}
 
 \item{destdir}{the directory path}
 
-\item{layout}{a function that creates the directory layout.
-See \code{monash::layout_teaching_dir} for an example.}
+\item{layout}{the yaml file name (TODO: or a list)}
 
 \item{rstudio}{launch in rstudio?}
 

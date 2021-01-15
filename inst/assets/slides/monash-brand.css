@@ -1,0 +1,69 @@
+/****
+
+PRIMARY PALETTE
+
+Monash Blue is our most identifiable colour. It conveys youthfulness, possibility and openness. It should always be considered first.
+
+Black conveys prestige, timelessness and sophistication.
+
+White is often shown as white space and conveys the brand personality of being open and youthful.
+
+Greys can be any percentage of black and provides additional flexibility to our primary colour palette.
+
+The primary colour palette is preferred for digital work.
+
+****/
+
+.monash-bg-blue { background-color: #006DAE!important; }
+.monash-bg-gray80 { background-color: #5A5A5A; }
+.monash-bg-gray50 { background-color: #969696; }
+.monash-bg-gray10 { background-color: #E6E6E6; }
+.monash-bg-white { background-color: #FFFFFF; }
+.monash-bg-black { background-color: #000000; }
+
+.monash-blue { color: #006DAE; }
+.monash-black { color: #000000; }
+.monash-white { color: #FFFFFF; }
+.monash-gray80 { color: #5A5A5A; }
+.monash-gray50 { color: #969696; }
+.monash-gray10 { color: #E6E6E6; }
+
+/**** 
+
+SECONDARY PALETTE 
+
+Inspired by the colours of our academic robes, we have a range of bright, colourful secondary colours.
+
+Secondary colours are to be used:
+
+* in charts and diagrams to highlight key findings
+* as headings and subheadings
+* sparingly to provide highlights or accents – ideally one or two secondary colours per double page spread
+* to speak to a particular audience group. For instance, colours that would resonate best with our prospective undergraduate audience would be colourful, bright and youthful. Industry and research would suit a more corporate/mature choice to reflect focus and prestige.
+
+****/
+
+
+.monash-bg-blue2 { background-color: #027EB6; }
+.monash-bg-purple2 { background-color: #746FB2; }
+.monash-bg-fuchsia2 { background-color: #9651A0; }
+.monash-bg-ruby2 { background-color: #C8008F; }
+.monash-bg-pink2 { background-color: #ee64a4; }
+.monash-bg-red2 { background-color: #EE0220; }
+.monash-bg-orange2 { background-color: #D93F00; }
+.monash-bg-umber2 { background-color: #795549; }
+.monash-bg-olive2 { background-color: #6F7C4D; }
+.monash-bg-green2 { background-color: #008A25!important; }
+
+.monash-blue2 { color: #027EB6; }
+.monash-purple2 { color: #746FB2; }
+.monash-fuchsia2 { color: #9651A0; }
+.monash-ruby2 { color: #C8008F; }
+.monash-pink2 { color: #ee64a4; }
+.monash-red2 { color: #EE0220; }
+.monash-orange2 { color: #D93F00; }
+.monash-umber2 { color: #795549; }
+.monash-olive2 { color: #6F7C4D; }
+.monash-green2 { color: #008A25; }
+
+

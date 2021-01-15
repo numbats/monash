@@ -1,0 +1,39 @@
+background-image: url(`r rmarkdown::metadata$bgimg`)
+background-size: cover
+class: hide-slide-number split-70
+count: false
+
+.column.shade_black[.content[
+
+<br><br>
+
+# That's it, for this lecture!
+
+<br> 
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+.bottom_abs.width100[
+
+Lecturer: `r rmarkdown::metadata$author`
+
+Department of Econometrics and Business Statistics<br>
+<i class="fas fa-envelope"></i> `r rmarkdown::metadata$email`
+
+]
+
+
+]]
+
+
+
+<div class="column transition monash-m-new delay-1s" style="clip-path:url(#swipe__clip-path);">
+<div class="background-image" style="background-image:url('images/large.png');background-position: center;background-size:cover;margin-left:3px;">
+<svg class="clip-svg absolute">
+<defs>
+<clipPath id="swipe__clip-path" clipPathUnits="objectBoundingBox">
+<polygon points="0.5745 0, 0.5 0.33, 0.42 0, 0 0, 0 1, 0.27 1, 0.27 0.59, 0.37 1, 0.634 1, 0.736 0.59, 0.736 1, 1 1, 1 0, 0.5745 0" />
+</clipPath>
+</defs>	
+</svg>
+</div>
+</div>

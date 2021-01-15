@@ -1,0 +1,50 @@
+
+@-webkit-keyframes reveal-bg {
+    0% {
+        transform: scale(1.25)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes mon-m {
+    0% {
+        -webkit-clip-path: polygon(100% 0, 50% 0, 0 0, 0 0, 0 100%, 0 100%, 27% 100%, 50% 100%, 50% 100%, 73.6% 100%, 100% 100%, 100% 100%, 100% 0, 57.45% 0)
+    }
+    50% {
+        -webkit-clip-path: polygon(100% 0, 50% 0, 0 0, 0 0, 0 100%, 0 100%, 27% 100%, 50% 100%, 50% 100%, 73.6% 100%, 100% 100%, 100% 100%, 100% 0, 57.45% 0)
+    }
+    to {
+        -webkit-clip-path: polygon(57.45% 0, 50% 33%, 42% 0, 0 0, 0 100%, 27% 100%, 27% 59%, 37% 100%, 63.4% 100%, 73.6% 59%, 73.6% 100%, 100% 100%, 100% 0, 57.45% 0)
+    }
+}
+
+.monash-m-new {
+    width: 100%;
+    clip-path: url(#swipe__clip-path);
+    -webkit-clip-path: polygon(57.45% 0, 50% 33%, 42% 0, 0 0, 0 100%, 27% 100%, 27% 59%, 37% 100%, 63.4% 100%, 73.6% 59%, 73.6% 100%, 100% 100%, 100% 0, 57.45% 0);
+    animation: mon-m 2s ease, bg 8s ease infinite;
+    margin-bottom: -1px
+}
+
+.monash-m-new .background-image {
+    background-size: auto 100%;
+    background-position: 50% 0;
+    height: 100%;
+    animation: reveal-bg 3s ease
+}
+
+.trans-black-background {
+    background-color: rgba(0, 0, 0, .9)
+}
+
+.monash-m-new .background-image .delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.monash-m-new .delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}

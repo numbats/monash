@@ -1,0 +1,64 @@
+
+background-color: #006DAE
+class: middle center hide-slide-number
+
+
+<div class="shade_black"  style="width:60%;right:0;bottom:0;padding:10px;border: dashed 4px white;margin: auto;">
+<i class="fas fa-exclamation-circle"></i> These slides are viewed best by Chrome and occasionally need to be refreshed if elements did not load properly. See <a href=`r rmarkdown::metadata$pdflink`/>here for PDF <i class="fas fa-file-pdf"></i></a>. 
+</div>
+
+<br>
+
+.white[Press the **right arrow** to progress to the next slide!]
+
+---
+
+
+background-image: url(`r rmarkdown::metadata$bgimg`)
+background-size: cover
+class: hide-slide-number split-70 title-slide
+count: false
+
+.column.shade_black[.content[
+
+<br>
+
+# .monash-blue.outline-text[`r rmarkdown::metadata$title`]
+
+<h2 class="monash-blue2 outline-text" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h2>
+
+<br>
+
+<h2 style="font-weight:900!important;">`r rmarkdown::metadata$subtitle`</h2>
+
+.bottom_abs.width100[
+
+Lecturer: *`r rmarkdown::metadata$author`*
+
+Department of Econometrics and Business Statistics
+
+<i class="fas fa-envelope"></i>  `r rmarkdown::metadata$email`
+
+`r rmarkdown::metadata$date`
+
+<br>
+]
+
+
+]]
+
+
+
+<div class="column transition monash-m-new delay-1s" style="clip-path:url(#swipe__clip-path);">
+<div class="background-image" style="background-image:url('images/large.png');background-position: center;background-size:cover;margin-left:3px;">
+<svg class="clip-svg absolute">
+<defs>
+<clipPath id="swipe__clip-path" clipPathUnits="objectBoundingBox">
+<polygon points="0.5745 0, 0.5 0.33, 0.42 0, 0 0, 0 1, 0.27 1, 0.27 0.59, 0.37 1, 0.634 1, 0.736 0.59, 0.736 1, 1 1, 1 0, 0.5745 0" />
+</clipPath>
+</defs>	
+</svg>
+</div>
+</div>
+
+

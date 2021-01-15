@@ -6,6 +6,8 @@
 \alias{monash-package}
 \title{monash: Consolidated tools and templates for staffs at Monash University}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 What the package does (one paragraph).
 }
 \author{

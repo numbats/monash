@@ -1,7 +1,11 @@
 public:
   lectures:
-    .Rmd:
-      - "lecture-01.Rmd""
+    images: "*"
+    assets: "*"
+    lib: "*"
+    .source:
+      - "lecture-01.Rmd"
   tutorial:
-    .Rmd:
-      - "tutorial-01.Rmd""
+    images: "*"
+    .source:
+      - "tutorial-01.Rmd"

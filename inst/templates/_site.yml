@@ -1,10 +1,22 @@
-name: ""
+name: "ETC5521: Exploratory Data Analysis"
 output_dir: "docs"
-exclude: ["*.Rmd", "*.csv", "*.R", "_*", ".*", "*.Rproj", "LICENSE", "README.md"]
 output:
   html_document:
     theme: cosmo
     highlight: textmate
-    include:
-      after_body: assets/footer.html
-    css: assets/styles.css
+    css: site/styles.css
+navbar:
+  title: "ETC5521: Exploratory Data Analysis"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Moodle"
+      icon: fa-archive
+      href: https://lms.monash.edu/course/view.php?id=81234
+    - text: "Unit Guide"
+      icon: fa-book
+      href: https://handbook.monash.edu/2020/units/ETC5521
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/numbats/eda

@@ -1,0 +1,97 @@
+.question {
+  text-align: center;
+  font-size: 36pt!important;
+  padding-left:17%;
+  padding-right:10%;
+  padding-top: 40px;
+  background-color:#0066cc;
+  background-image: url("../images/question.png");
+  background-position: 5% 90%;
+  background-size: 150px;
+  color: white;
+}
+
+.color-box {
+  position: absolute;
+  bottom:10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width:70%;
+  text-align:center;
+  color: #0081c7;
+  border-radius: 5px;
+  border: double 5px #0081c7;
+  background-color: #abdff7;
+  padding: 20px;
+}
+
+.challenge {
+  text-align: left;
+  padding-left:20%;
+  padding-top: 40px;
+  font-size: 40pt!important;
+  background-color:#ffa500;
+  background-image: url("../images/coding.png");
+  background-position: 5% 90%;
+  background-size: 150px;
+  color: white;
+}
+
+.info-box {
+  position: relative;
+  border: solid 3px black;
+  background-color:white;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 7px;
+  margin: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.info-box:before {
+  position: absolute;
+  content: url("../images/info-circle.png");
+  top: 0;
+  left: 0;
+  border-radius:20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  font-size: 12pt;
+  background-color: #f2f2f2;
+}
+
+.code-box {
+  position: relative;
+  border: solid 3px black;
+  background-color:white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18pt;
+  border-radius: 7px;
+}
+
+.code-box:before {
+  position: absolute;
+  content: url("../images/code.png");
+  top: 0;
+  left: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+  border-radius:20px;
+  font-size: 12pt;
+  background-color: #f2f2f2;
+}
+
+
+.corner-box {
+  position: absolute;
+  bottom: 45px;
+  left: 20px;
+  border: 3px solid black;
+  padding: 10px;
+  width: 80%;
+  color: white;
+  background-color: #027EB6;
+}
