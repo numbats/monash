@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>monash: Consolidated tools and templates for staffs at Monash University — monash-package • monash</title>
+<title>Get Monash logo — logo_get • monash</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,9 +46,8 @@
 
 
 
-<meta property="og:title" content="monash: Consolidated tools and templates for staffs at Monash University — monash-package" />
-<meta property="og:description" content="
-What the package does (one paragraph)." />
+<meta property="og:title" content="Get Monash logo — logo_get" />
+<meta property="og:description" content="A quick way of getting the Monash logo." />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -124,21 +123,61 @@ What the package does (one paragraph)." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>monash: Consolidated tools and templates for staffs at Monash University</h1>
+    <h1>Get Monash logo</h1>
     
-    <div class="hidden name"><code>monash-package.Rd</code></div>
+    <div class="hidden name"><code>logo_get.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p><img src='figures/logo.png' align='right' alt='logo' width='120' /></p>
-<p>What the package does (one paragraph).</p>
+    <p>A quick way of getting the Monash logo.</p>
     </div>
 
+    <pre class="usage"><span class='fu'>logo_get</span><span class='op'>(</span>
+  path <span class='op'>=</span> <span class='st'>"."</span>,
+  stack <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  color <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"blue"</span>, <span class='st'>"black"</span>, <span class='st'>"white"</span><span class='op'>)</span>,
+  type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"png"</span>, <span class='st'>"jpg"</span>, <span class='st'>"ai"</span><span class='op'>)</span>,
+  hq <span class='op'>=</span> <span class='cn'>FALSE</span>,
+  overwrite <span class='op'>=</span> <span class='cn'>TRUE</span>,
+  filename <span class='op'>=</span> <span class='cn'>NULL</span>
+<span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>path</th>
+      <td><p>the path to save the file to</p></td>
+    </tr>
+    <tr>
+      <th>stack</th>
+      <td><p>TRUE for stacked logo, FALSE for one-line logo</p></td>
+    </tr>
+    <tr>
+      <th>color</th>
+      <td><p><code>blue</code>, <code>black</code> or <code>white</code></p></td>
+    </tr>
+    <tr>
+      <th>type</th>
+      <td><p><code>png</code>, <code>jpg</code> or <code>ai</code></p></td>
+    </tr>
+    <tr>
+      <th>hq</th>
+      <td><p>TRUE for high-quality image (larger file size)</p></td>
+    </tr>
+    <tr>
+      <th>overwrite</th>
+      <td><p>TRUE for overwriting (should it enquire?), FALSE for not. Not implemented yet.</p></td>
+    </tr>
+    <tr>
+      <th>filename</th>
+      <td><p>A new file name for the logo. Not implemented yet.</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p><strong>Maintainer</strong>: Emi Tanaka <a href='mailto:dr.emi.tanaka@gmail.com'>dr.emi.tanaka@gmail.com</a> (<a href='https://orcid.org/0000-0002-1455-259X'>ORCID</a>)</p>
+    <p>https://www.monash.edu/brandbook/brand-elements/our-logo</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
