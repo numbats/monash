@@ -1,0 +1,45 @@
+schedule:
+  - week: 0
+    lecturer: Taylor
+    topic: "Course information"
+  - week: 1
+    lecturer: Taylor
+    topic: "Overview of musical data"
+    readings: "[You can add links as per markdown](link)"
+    assessment: >
+     * Markdown **item 1**
+     * Markdown _item 2_
+  - week: 2
+    lecturer: Taylor
+    topic: "Pop and data"
+    readings:
+  - week: 3
+    lecturer: Ed
+  - week: 4
+    lecturer: Ed
+  - week: 5
+    lecturer: Taylor
+  - week: 6
+    lecturer: Taylor
+  - week: 7
+    lecturer: Ed
+  - week: 8
+    lecturer: Ed
+  - week: 9
+    lecturer: Taylor
+  - week: 10
+    lecturer: Taylor
+  - week: 11
+    lecturer: Ed
+  - week: 12
+    lecturer: Taylor/Ed
+team:
+  - name: Prof Taylor Swift (Chief Examiner)
+    role: lecturer
+    consult: Thu 11.30-12.30pm (Wk 1-2, 5-6, 9-10)
+  - name: Dr Edward Sheeran
+    role: lecturer
+    consult: Thu 11.30-12.30pm (Wk 3-4, 7-8, 11-12)
+  - name: Robert Menzies
+    role: tutor
+    consult: Tue 1.45-2.30pm (Wk 1-12)

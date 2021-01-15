@@ -24,7 +24,8 @@ Imports:
     whisker,
     purrr,
     scales,
-    desc
+    desc,
+    yaml
 Suggests: 
     knitr,
     rmarkdown,

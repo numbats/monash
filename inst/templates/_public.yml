@@ -1,0 +1,7 @@
+public:
+  lectures:
+    .Rmd:
+      - "lecture-01.Rmd""
+  tutorial:
+    .Rmd:
+      - "tutorial-01.Rmd""
