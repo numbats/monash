@@ -2,11 +2,12 @@ Package: monash
 Title: Consolidated tools and templates for staffs at Monash University 
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "Emi",
+    c(person(given = "Emi",
            family = "Tanaka",
            role = c("aut", "cre"),
            email = "dr.emi.tanaka@gmail.com",
-           comment = c(ORCID = "0000-0002-1455-259X"))
+           comment = c(ORCID = "0000-0002-1455-259X")),
+      person("Rob", "Hyndman", , "Rob.Hyndman@monash.edu", c("aut"))
 Description: What the package does (one paragraph).
 License: GPL-3 + file license
 Encoding: UTF-8

@@ -1,0 +1,7 @@
+---
+title: Note to self
+author: Marie Curie
+output: MonashEBSTemplates::memo
+---
+
+
