@@ -1,23 +1,8 @@
----
-title: 'Thesis title'
-degreetype: 'Doctor of Philosophy'
-author: 'Joe Bloggs'
-degrees: 'B.Sc. (Hons), University of Tangambalanga'
-output: bookdown::pdf_book
-site: bookdown::bookdown_site
-link-citations: yes
-knit: "bookdown::render_book"
----
 
-<!-- 
-Edit these lines as appropriate.
-The actual thesis content is in several Rmd files.
 
-You'll need to edit the _bookdown.yml file to set the order in which you'd like them to appear. 
+This file is just a dummy file 
+required for the Rmd template. You can safely delete this file. 
 
-If you have specific LaTeX packages to add, put them in monashthesis.tex.
+To get started, have a look at other Rmd files.
 
-You will need to ensure you have installed the knitr and bookdown packages for R.
-
-You will also need LaTeX installed on your computer.
--->
+If you named your file, `index.Rmd`, `00-abstract.Rmd`, `00-acknowledge.Rmd`, `00-copyright.Rmd`, `00-declaration.Rmd`, `00-preface.Rmd` `01-chap1.Rmd `, `02-chap2.Rmd` or `A-appA.Rmd`, it may have overwritten the other necessary files so it will be better to redo it and rename your file to something else. 
