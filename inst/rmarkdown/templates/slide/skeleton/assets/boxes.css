@@ -1,0 +1,110 @@
+.blockquote {
+  display: inline-block;
+  margin:10px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #006DAE ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.blockquote::before{
+  font-family: Arial;
+  content: "\201C";
+  color: #006DAE;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.blockquote .cite {
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+
+
+.info-box, .code-box, .idea-box, .work-box, .question-box, .think-box, .aim-box {
+  display: inline-block;
+  margin:10px auto;
+  background-color: white;
+  color: #555555;
+  padding: 0.3em 20px 0.3em 20px;
+  line-height:1.6;
+  position: relative;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-left-width: 60px;
+}
+.info-box::before, .code-box::before, .idea-box::before, .work-box::before, .question-box::before, .think-box::before, .aim-box::before {
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 1.5em;
+  font-weight: 900;
+  position: absolute;
+}
+
+.info-box { border-color: #006DAE; }
+.info-box::before{
+  content: "\f05a";
+  left: -47px;
+  top: 5px;
+}
+.code-box { border-color: #008A25; }
+.code-box::before {
+  content: "\f5fc";
+  left: -50px;
+  top: 5px;
+}
+.idea-box { border-color: #C8008F; }
+.idea-box::before {
+  content: "\f0eb";
+  left: -42px;
+  top: 5px;
+}
+.work-box { border-color: #EE0220; }
+.work-box::before {
+  content: "\f0ad";
+  left: -44px;
+  top: 5px;
+}
+.question-box { border-color: #D93F00; }
+.question-box::before{
+  content: "\f059";
+  left: -47px;
+  top: 5px;
+}
+.think-box { border-color: #ee64a4; }
+.think-box::before {
+  content: "\f4ad";
+  left: -46px;
+  top: 5px;
+}
+.aim-box { border-color: #9651A0; }
+.aim-box::before {
+  content: "\f05b";
+  left: -48px;
+  top: 5px;
+}
+
+.color-box, .border-box {
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.border-box {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+

@@ -1,0 +1,99 @@
+/****
+
+PRIMARY PALETTE
+
+Monash Blue is our most identifiable colour. It conveys youthfulness, possibility and openness. It should always be considered first.
+
+Black conveys prestige, timelessness and sophistication.
+
+White is often shown as white space and conveys the brand personality of being open and youthful.
+
+Greys can be any percentage of black and provides additional flexibility to our primary colour palette.
+
+The primary colour palette is preferred for digital work.
+
+****/
+
+.monash-bg-blue { background-color: #006DAE!important; }
+.monash-bg-gray80 { background-color: #5A5A5A!important; }
+.monash-bg-gray50 { background-color: #969696;!important }
+.monash-bg-gray10 { background-color: #E6E6E6;!important }
+.monash-bg-white { background-color: #FFFFFF!important; }
+.monash-bg-black { background-color: #000000!important; }
+
+.monash-blue, .monash-blue code, .monash-blue a { color: #006DAE!important; }
+.monash-black, .monash-black code, .monash-black a { color: #000000!important; }
+.monash-white, .monash-white code, .monash-white a { color: #FFFFFF!important; }
+.monash-gray80, .monash-gray80 code, .monash-gray80 a { color: #5A5A5A!important; }
+.monash-gray50, .monash-gray50 code, .monash-gray50 a { color: #969696!important; }
+.monash-gray10, .monash-gray10 code, .monash-gray10 a { color: #E6E6E6!important; }
+
+.monash-border-blue { border-color: #006DAE!important; }
+.monash-border-black { border-color: #000000!important; }
+.monash-border-white { border-color: #FFFFFF!important; }
+.monash-border-gray80 { border-color: #5A5A5A!important; }
+.monash-border-gray50 { border-color: #969696!important; }
+.monash-border-gray10 { border-color: #E6E6E6!important; }
+
+/****
+
+SECONDARY PALETTE
+
+Inspired by the colours of our academic robes, we have a range of bright, colourful secondary colours.
+
+Secondary colours are to be used:
+
+* in charts and diagrams to highlight key findings
+* as headings and subheadings
+* sparingly to provide highlights or accents – ideally one or two secondary colours per double page spread
+* to speak to a particular audience group. For instance, colours that would resonate best with our prospective undergraduate audience would be colourful, bright and youthful. Industry and research would suit a more corporate/mature choice to reflect focus and prestige.
+
+****/
+
+
+.monash-bg-blue2 { background-color: #027EB6!important; }
+.monash-bg-purple2 { background-color: #746FB2!important; }
+.monash-bg-fuchsia2 { background-color: #9651A0!important; }
+.monash-bg-ruby2 { background-color: #C8008F!important; }
+.monash-bg-pink2 { background-color: #ee64a4!important; }
+.monash-bg-red2 { background-color: #EE0220!important; }
+.monash-bg-orange2 { background-color: #D93F00!important; }
+.monash-bg-umber2 { background-color: #795549!important; }
+.monash-bg-olive2 { background-color: #6F7C4D!important; }
+.monash-bg-green2 { background-color: #008A25!important; }
+
+.monash-border-blue2 { border-color: #027EB6!important; }
+.monash-border-purple2 { border-color: #746FB2!important; }
+.monash-border-fuchsia2 { border-color: #9651A0!important; }
+.monash-border-ruby2 { border-color: #C8008F!important; }
+.monash-border-pink2 { border-color: #ee64a4!important; }
+.monash-border-red2 { border-color: #EE0220!important; }
+.monash-border-orange2 { border-color: #D93F00!important; }
+.monash-border-umber2 { border-color: #795549!important; }
+.monash-border-olive2 { border-color: #6F7C4D!important; }
+.monash-border-green2 { border-color: #008A25!important; }
+
+.monash-blue2, .monash-blue2 code, .monash-blue2 a { color: #027EB6!important; }
+.monash-purple2, .monash-purple2 code, .monash-purple2 a { color: #746FB2!important; }
+.monash-fuchsia2, .monash-fuchsia2 code, .monash-fuchsia2 a { color: #9651A0!important; }
+.monash-ruby2, .monash-ruby2 code, .monash-ruby2 a { color: #C8008F!important; }
+.monash-pink2, .monash-pink2 code, .monash-pink2 a { color: #ee64a4!important; }
+.monash-red2, .monash-red2 code, .monash-red2 a { color: #EE0220!important; }
+.monash-orange2, .monash-orange2 code, .monash-orange2 a { color: #D93F00;!important }
+.monash-umber2, .monash-umber2 code, .monash-umber2 a { color: #795549!important; }
+.monash-olive2, .monash-olive2 code, .monash-olive2 a { color: #6F7C4D!important; }
+.monash-green2, .monash-green2 code, .monash-green2 a { color: #008A25!important; }
+
+
+:not(.no-logo):not(.footer-slide) > .remark-slide-number:before {
+  width: 150px;
+  height: 150px;
+  margin-bottom: -10px;
+  display: inline-block;
+  content: "";
+  background-image: url("../images/accessories/monash-stacked-blue-rgb-transparent.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+}
+

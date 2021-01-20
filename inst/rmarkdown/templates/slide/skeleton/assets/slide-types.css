@@ -1,0 +1,97 @@
+
+.title-slide {
+  background-image: url("../images/bg-01.png");
+  background-size: cover;
+  padding-top: 150px;
+  padding-right: 370px;
+}
+.title-slide > .remark-slide-number {
+  display: none;
+}
+
+.monash-slide {
+  background-image: url("../images/bg-05.png");
+  background-size: cover;
+  padding-right: 300px;
+}
+.monash-slide > .remark-slide-number {
+  display: none;
+}
+
+.footer-slide {
+  background-image: url("../images/bg-08.png");
+  background-size: cover;
+}
+
+
+
+.transition  {
+  background-color: #006DAE; /* monash-bg-blue */
+  text-align: center;
+  vertical-align: middle;
+}
+.transition > .remark-slide-number {
+  display: none;
+}
+.transition > .footnote {
+  background-color: transparent!important;
+}
+
+
+
+.question {
+  text-align: center;
+  font-size: 36pt!important;
+  padding-left:17%;
+  padding-right:10%;
+  padding-top: 40px;
+  background-color:#0066cc;
+  background-image: url("../images/accessories/question.png");
+  background-repeat: no-repeat;
+  background-position: 5% 90%;
+  background-size: 150px;
+  color: white;
+}
+
+.challenge {
+  text-align: left;
+  padding-left:20%;
+  padding-top: 40px;
+  font-size: 40pt!important;
+  background-color:#ffa500;
+  background-image: url("../images/accessories/coding.png");
+  background-position: 5% 90%;
+  background-size: 150px;
+  color: white;
+}
+
+
+.refresher, .informative, .motivator, .transition {
+  color: white;
+}
+
+.refresher   { background-color: #008A25; } /* monash-bg-green2 */
+.informative { background-color: #746FB2; } /* monash-bg-purple2 */
+.motivator   { background-color: #9651A0; } /* monash-bg-fuchsia2 */
+.poll   {
+  background-color: #D93F00;  /* monash-bg-orange2 */
+  color: #FFFFFF;
+  font-size: 36pt;
+}
+
+
+.motivator .info-box strong { color: #9651A0; }
+.informative .info-box strong { color: #746FB2; }
+.refresher .info-box strong { color: #008A25; }
+.transition .info-box strong { color: #006DAE; }
+
+
+.transition > h1 { font-size: 70pt!important; }
+
+.transition  a,
+.informative a,
+.refresher a,
+.motivator a {
+  color: #969696;
+  text-decoration: none;
+}

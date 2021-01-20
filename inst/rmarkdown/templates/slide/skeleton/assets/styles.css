@@ -1,0 +1,154 @@
+
+/* some fixes */
+
+@media print {
+  .remark-slide-scaler {
+    width: 100%!important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+p {
+  margin-block-start: 10px;
+  margin-block-end: 0;
+}
+
+/* because of ninjutsu */
+
+h2, h3, p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+pre {
+  margin: 0;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+
+
+a {
+  color: #027EB6;
+  text-decoration: none;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-left:5px;
+  padding-right:5px;
+  padding-top: 4px;
+  padding-bottom:  4px;
+  color: rgb(231, 240, 243);
+  font-size: 18pt;
+}
+
+:not(.footer-slide) > .footnote {
+  background-color: #006DAE;
+}
+
+.footnote a {
+  color: white!important;
+}
+
+
+
+.remark-slide-number { font-size: 12pt; }
+.remark-slide-content h1:first-of-type { padding-bottom: 15px; }
+
+
+.wider {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+
+.grid, .grid-col, .grid-row {
+  display: grid;
+  width: calc(100%);
+  height: 100%;
+}
+
+.grid, .grid-col {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.grid-row {
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+}
+
+.shade_black > a {
+  color: white!important;
+}
+
+
+.remark-code { font-size: 24pt; }
+.font_small .remark-code { font-size: 18pt;}
+.font_smaller .remark-code { font-size: 16pt }
+.font_smaller2 .remark-code { font-size: 13pt }
+
+
+li { margin: 10px 0; }
+
+.remark-slide-content h1:first-of-type {
+  padding-top:0px;
+}
+
+.shade_black  {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    padding: 0;
+}
+.shade_black > a {
+  color: white!important;
+}
+
+
+
+
+
+.remark-slide-content {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table-cell;
+    font-size: 24px;
+    padding: 25px 25px 25px 25px;
+}

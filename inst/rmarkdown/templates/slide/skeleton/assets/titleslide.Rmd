@@ -1,0 +1,52 @@
+
+class: middle center hide-slide-number monash-bg-gray80
+
+
+```{r, include = FALSE}
+basename <- ifelse(exists("basename"), basename, "slide")
+pdflink <- ifelse(is.null(rmarkdown::metadata$pdflink),
+                  paste0(basename, ".pdf"),
+                  rmarkdown::metadata$pdflink)
+```
+
+
+.info-box.w-50.bg-white[
+These slides are viewed best by Chrome or Firefox and occasionally need to be refreshed if elements did not load properly. See <a href=`r pdflink`/>here for the PDF <i class="fas fa-file-pdf"></i></a>. 
+]
+
+<br>
+
+.white[Press the **right arrow** to progress to the next slide!]
+
+
+
+---
+
+
+background-size: cover
+class: title-slide
+count: false
+
+# .monash-blue[`r rmarkdown::metadata$title`]
+
+<h1 class="monash-blue" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h1>
+
+<br>
+
+<h2 style="font-weight:900!important;">`r rmarkdown::metadata$subtitle`</h2>
+
+.bottom_abs.width100[
+
+Lecturer: *`r rmarkdown::metadata$author`*
+
+`r rmarkdown::metadata$department`
+
+<i class="fas fa-envelope"></i>  `r rmarkdown::metadata$email`
+
+<i class="fas fa-calendar-alt"></i> `r rmarkdown::metadata$date`
+
+<br>
+
+]
+
+

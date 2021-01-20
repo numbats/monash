@@ -1,36 +1,37 @@
 ---
-title: "ETC5521: Exploratory Data Analysis"
-subtitle: "Introduction"
-author: "Di Cook"
-email: "ETC5521.Clayton-x@monash.edu"
-date: "Week 1 - Session 1"
+title: "ETCXXXX: Course Name"
+subtitle: "Subtitle"
+author: "FirstName LastName"
+email: "XXX@monash.edu"
+date: "Week 1 Session A"
 length: "10 minutes"
-color_theme: "yellow"
-pdflink: "lecture-01A.pdf"
-bgimg: "images/wk1bg2.jpg"
+department: "Department of Econometrics and Business Statistics"
 output:
   xaringan::moon_reader:
     css:
       - ninjutsu 
+      - "assets/font-awesome-all.css"
+      - "assets/tachyons-addon.css"
       - "assets/animate.css"
       - "assets/fira-code.css"
       - "assets/boxes.css"
+      - "assets/table.css"
       - "assets/styles.css"
-      - "assets/custom.css"
-      - "assets/monash-logo.css"
       - "assets/monash-brand.css"
       - "assets/monash-fonts.css"
-      - "assets/table.css"
-      - "assets/di.css"
+      - "assets/slide-types.css"
+      - "assets/custom.css"
     self_contained: false 
     seal: false 
-    chakra: 'libs/remark-latest.min.js'
-    lib_dir: libs
+    chakra: 'lib/remark-latest.min.js'
     includes:
-      in_header: "assets/custom.html"
-    mathjax: "assets/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      in_header: "assets/head.html"
+    lib_dir: lib
+    #includes:
+    #  in_header: "assets/custom.html"
+    mathjax: "lib/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
     nature:
-      highlightStyle: googlecode
+      highlightStyle: magula
       highlightLanguage: r 
       highlightLines: true
       highlightSpans: false 
@@ -43,28 +44,483 @@ output:
       ratio: '16:9'
 ---
 
+
 ```{r, include = FALSE}
 current_file <- knitr::current_input()
-```
-```{r, include = FALSE}
+basename <- gsub(".Rmd$", "", current_file)
+
 knitr::opts_chunk$set(
-  fig.path = "images/week1/",
+  fig.path = sprintf("images/%s/", basename),
   fig.width = 6,
   fig.height = 4,
   fig.align = "center",
   out.width = "100%",
   fig.retina = 3,
-  echo = FALSE,
+  echo = TRUE,
   warning = FALSE,
   message = FALSE,
-  cache = FALSE
+  cache = TRUE,
+  cache.path = "cache/"
 )
 ```
 
-```{r titleslide, child="components/titleslide.Rmd"}
+```{r titleslide, child="assets/titleslide.Rmd"}
 ```
 
 ---
 
-```{r endslide, child="components/endslide.Rmd"}
+class: transition 
+
+# Background slide types
+
+
+.footnote[
+`class: transition`
+]
+
+---
+
+
+class: monash-bg-purple2 white
+
+# Monash Color Palettes
+
+
+.flex[
+.w-33.border-box.monash-border-black.black.bg-white[
+* .monash-blue[`.monash-blue`]
+* .monash-black[`.monash-black`]
+* .monash-gray80[`.monash-gray80`]
+* .monash-gray50[`.monash-gray50`]
+* .monash-gray10[`.monash-gray10`]
+* .monash-bg-blue.white[`.monash-bg-blue`]
+* .monash-bg-black.white[`.monash-bg-black`]
+* .monash-bg-gray80.white[`.monash-bg-gray80`]
+* .monash-bg-gray50.white[`.monash-bg-gray50`]
+* .monash-bg-gray10[`.monash-bg-gray10`]
+]
+.w33.border-box.monash-border-black.black.bg-white[
+* .monash-blue2[`.monash-blue2`]
+* .monash-purple2[`.monash-purple2`]
+* .monash-fuchsia2[`.monash-fuchsia2`]
+* .monash-ruby2[`.monash-ruby2`]
+* .monash-pink2[`.monash-pink2`]
+* .monash-red2[`.monash-red2`]
+* .monash-orange2[`.monash-orange2`]
+* .monash-umber2[`.monash-umber2`]
+* .monash-olive2[`.monash-olive2`]
+* .monash-green2[`.monash-green2`]
+]
+.w33.border-box.monash-border-black.black.bg-white[
+* .monash-bg-blue2[`.monash-bg-blue2`]
+* .monash-bg-purple2[`.monash-bg-purple2`]
+* .monash-bg-fuchsia2[`.monash-fbg-uchsia2`]
+* .monash-bg-ruby2[`.monash-bg-ruby2`]
+* .monash-bg-pink2[`.monash-bg-pink2`]
+* .monash-bg-red2[`.monash-bg-red2`]
+* .monash-bg-orange2[`.monash-bg-orange2`]
+* .monash-bg-umber2[`.monash-bg-umber2`]
+* .monash-bg-olive2[`.monash-bg-olive2`]
+* .monash-bg-green2[`.monash-bg-green2`]
+]
+]
+
+.footnote[
+You can make a footnote with `.footnote[]`
+]
+
+---
+
+class: monash-bg-ruby2 white
+
+# Material UI Color from `ninjutsu`
+
+.flex[
+.border-box.monash-border-black.black.bg-white.w-25[
+* .red[`.red`]
+* .pink[`.pink`]
+* .purple[`.purple`]
+* .deep-purple[`.deep-purple`]
+* .indigo[`.indigo`]
+* .blue[`.blue`]
+* .light-blue[`.light-blue`]
+* .cyan[`.cyan`]
+* .teal[`.teal`]
+* .green[`.green`]
+* .light-green[`.light-green`]
+]
+.border-box.monash-border-black.black.bg-white.w-20[
+* .lime[`.lime`]
+* .yellow[`.yellow`]
+* .amber[`.amber`]
+* .orange[`.orange`]
+* .deep-orange[`.deep-orange`]
+* .brown[`.brown`]
+* .gray[`.gray`]
+* .blue-gray[`.blue-gray`]
+* .white.bg-gray[`.white`]
+* .black[`.black`]
+]
+.border-box.monash-border-black.black.bg-white.w-30[
+* .bg-red[`.bg-red`]
+* .bg-pink[`.bg-pink`]
+* .bg-purple[`.bg-purple`]
+* .bg-deep-purple[`.bg-deep-purple`]
+* .bg-indigo[`.bg-indigo`]
+* .bg-blue[`.bg-blue`]
+* .bg-light-blue[`.bg-light-blue`]
+* .bg-cyan[`.bg-cyan`]
+* .bg-teal[`.bg-teal`]
+* .bg-green[`.bg-green`]
+* .bg-light-green[`.bg-light-green`]
+]
+.border-box.monash-border-black.black.bg-white.w-25[
+* .bg-lime[`.bg-lime`]
+* .bg-yellow[`.bg-yellow`]
+* .bg-amber[`.bg-amber`]
+* .bg-orange[`.bg-orange`]
+* .bg-deep-orange[`.bg-deep-orange`]
+* .bg-brown[`.bg-brown`]
+* .bg-gray[`.bg-gray`]
+* .bg-blue-gray[`.bg-blue-gray`]
+* .bg-white.black[`.bg-white`]
+* .bg-black.white[`.bg-black`]
+]
+
+]
+
+---
+
+class: transition
+
+# Boxes
+
+---
+
+class: no-logo
+background-image: url("images/bg-07.png")
+background-size: cover
+
+# Quotes
+
+<br>
+
+.w-60[
+
+```
+.blockquote[
+
+All models are wrong but some are useful.
+
+.cite[George Box]]
+```
+
+<br>
+
+.blockquote[
+All models are wrong but some are useful.
+.cite[George Box]]
+
+]
+
+
+
+---
+
+class: no-logo
+
+# Box types
+
+.flex[
+.w-50.pa1[
+.info-box.w-100[
+`.info-box[]`
+* Assignment 1 is **due 18th May**
+]
+.code-box.w-100[
+`.code-box[]`
+```{r}
+subset(cars, speed < 7)
+```
+]
+.idea-box.w-100[
+`.idea-box`
+
+All boxes may be combined with `.w-XX`.
+]
+]
+.w-50.pa1[
+
+.work-box.w-55[
+`work-box`
+
+Your turn!
+]
+
+.question-box.w-100[
+`.question-box`
+
+What is data science?
+]
+
+.aim-box.w-100[
+`.aim-box`
+
+Aim to do make all slides using this template.
+]
+
+.think-box.w-100[
+`.think-box`
+
+To be or not to be. That is the question.
+]
+
+]
+
+]
+
+---
+
+# Make your own boxes
+
+.color-box.monash-bg-blue.w-50[
+
+Combine `.color-box` with `.monash-bg-` colors.
+
+<br>
+
+.white[This box is made using `.color-box.monash-bg-blue.w-50[]`
+]]
+
+
+
+
+
+.border-box.monash-border-blue.w-50[
+Combine `.border-box` with `.monash-border-` colors.
+
+<br>
+
+This box is made using `.border-box.monash-border-blue.w-50[]`
+]
+
+---
+
+
+# Logo
+
+.measure[
+* Every slide that has a slide number comes with a monash logo on its right. 
+* Use `class: hide-slide-number` to hide the logo and the slide number. 
+* Use `class: no-logo` to hide the logo only.
+]
+
+---
+
+class: transition 
+
+# Background images
+
+---
+
+background-image: url("images/bg-01.png")
+class: title-slide
+
+```
+class: title-slide
+background-image: url("images/bg-01.png")
+```
+
+---
+
+background-image: url("images/bg-02.png")
+class: title-slide
+
+```
+class: title-slide
+background-image: url("images/bg-02.png")
+```
+
+---
+
+background-image: url("images/bg-03.png")
+class: title-slide
+
+```
+class: title-slide
+background-image: url("images/bg-03.png")
+```
+
+
+---
+
+background-image: url("images/bg-04.png")
+class: title-slide
+
+```
+class: title-slide
+background-image: url("images/bg-04.png")
+```
+
+
+---
+
+class: monash-slide
+background-image: url("images/bg-05.png")
+
+# Default background for `monash-slide`
+
+```
+class: monash-slide
+background-image: url("images/bg-05.png")
+```
+
+i.e. you don't need to add `background-image: url("images/bg-05.png")`
+
+---
+
+class: monash-slide
+background-image: url("images/bg-06.png")
+
+```
+class: monash-slide
+background-image: url("images/bg-06.png")
+```
+
+
+
+---
+class: monash-slide
+background-image: url("images/bg-07.png")
+
+```
+class: monash-slide
+background-image: url("images/bg-07.png")
+```
+
+---
+
+class: footer-slide
+background-image: url("images/bg-08.png")
+
+```
+class: footer-slide
+background-image: url("images/bg-08.png")
+```
+
+
+This is the default footer background image.
+
+.footnote.monash-black[
+You can add footnote using `.footnote[]`.
+<br><br>
+]
+
+---
+
+class: footer-slide
+background-image: url("images/bg-09.png")
+
+```
+class: footer-slide
+background-image: url("images/bg-09.png")
+```
+
+---
+
+class: monash-slide
+background-image: url("images/bg-10.png")
+
+```
+class: monash-slide
+background-image: url("images/bg-10.png")
+```
+
+---
+
+class: monash-slide
+background-image: url("images/bg-11.png")
+
+```
+class: monash-slide
+background-image: url("images/bg-11.png")
+```
+
+---
+
+class: transition 
+
+# Tachyons
+
+---
+
+class: center middle
+
+.f1.measure[
+There are a number of CSS elements borrowed from Tachyons
+
+http://tachyons.io/docs/
+
+]
+
+--
+
+<br><br>
+
+You can find this in `assets/tacyons-addon.css`.
+
+--
+
+<br><br>
+
+Only a few features are shown in the next couple of slides.
+
+
+---
+
+
+# Font sizes and Text decorations
+
+.f-headline[`.f-headline[]`] or .f-6[`.f-6[]`]
+
+.f-subheadline[`.f-subheadline[]`] or .f-5[`.f-5[]`]
+
+.f1[`.f1[]`] 
+.f2[`.f2[]`]
+.f3[`.f3[]`]
+.f4[`.f4[]`]
+.f5[`.f5[]`]
+.f6[`.f6[]`]
+.f7[`.f7[]`]
+
+
+.underline[`.underline[]`]
+
+.strike[`.strike[]`]
+
+---
+
+# Scroll boxes
+
+`.overflow-scroll.h5[]`
+
+.overflow-scroll.h5[
+```{r}
+mtcars
+```
+]
+
+`.overflow-scroll.h-25[]`
+.overflow-scroll.h-25[
+```{r}
+mtcars
+```
+]
+
+`.h-XX` come in 5% increments from 25 to 100%.
+
+
+---
+
+```{r endslide, child="assets/endslide.Rmd"}
 ```
