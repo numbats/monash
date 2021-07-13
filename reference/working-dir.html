@@ -105,6 +105,12 @@
     <li>
       <a href="../articles/file-structure.html">File structure</a>
     </li>
+    <li>
+      <a href="../articles/flux.html">FLUX</a>
+    </li>
+    <li>
+      <a href="../articles/github-classroom.html">GitHub Classroom</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -132,7 +138,7 @@
     <p>Functions to create a default directory structure.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>create_bare_dir</span><span class='op'>(</span>
+    <pre class="usage"><span class='fu'>create_layout_dir</span><span class='op'>(</span>
   <span class='va'>code</span>,
   name <span class='op'>=</span> <span class='va'>code</span>,
   proj_name <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>name</span>, <span class='st'>"-private"</span><span class='op'>)</span>,
@@ -147,20 +153,18 @@
   <span class='va'>code</span>,
   name <span class='op'>=</span> <span class='va'>code</span>,
   full_name <span class='op'>=</span> <span class='va'>name</span>,
-  destdir <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/options.html'>getOption</a></span><span class='op'>(</span><span class='st'>"monash.workshop_dir"</span><span class='op'>)</span>,
+  destdir <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/options.html'>getOption</a></span><span class='op'>(</span><span class='st'>"monash.workshop.dir"</span><span class='op'>)</span>,
   rstudio <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  open <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  layout <span class='op'>=</span> <span class='va'>layout_workshop_dir</span>
+  open <span class='op'>=</span> <span class='cn'>TRUE</span>
 <span class='op'>)</span>
 
 <span class='fu'>create_teaching_dir</span><span class='op'>(</span>
   <span class='va'>code</span>,
   name <span class='op'>=</span> <span class='va'>code</span>,
   full_name <span class='op'>=</span> <span class='va'>name</span>,
-  destdir <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/options.html'>getOption</a></span><span class='op'>(</span><span class='st'>"monash.teaching_dir"</span><span class='op'>)</span>,
+  destdir <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/options.html'>getOption</a></span><span class='op'>(</span><span class='st'>"monash.teaching.dir"</span><span class='op'>)</span>,
   rstudio <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  open <span class='op'>=</span> <span class='cn'>TRUE</span>,
-  layout <span class='op'>=</span> <span class='cn'>NULL</span>
+  open <span class='op'>=</span> <span class='cn'>TRUE</span>
 <span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
@@ -204,7 +208,7 @@
 
     
 <ul>
-<li><p><code>create_bare_dir</code>: Create a directory structure specified by <code>layout</code>.</p></li>
+<li><p><code>create_layout_dir</code>: Create a directory structure specified by <code>layout</code>.</p></li>
 <li><p><code>create_workshop_dir</code>: Create a skeleton workshop directory.</p></li>
 <li><p><code>create_teaching_dir</code>: Create a skeleton teaching directory.</p></li>
 </ul>

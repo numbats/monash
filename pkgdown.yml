@@ -3,5 +3,7 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   file-structure: file-structure.html
-last_built: 2021-02-26T02:10Z
+  flux: flux.html
+  github-classroom: github-classroom.html
+last_built: 2021-07-13T05:34Z
 
