@@ -13,5 +13,10 @@ What the package does (one paragraph).
 \author{
 \strong{Maintainer}: Emi Tanaka \email{dr.emi.tanaka@gmail.com} (\href{https://orcid.org/0000-0002-1455-259X}{ORCID})
 
+Authors:
+\itemize{
+  \item Rob Hyndman \email{Rob.Hyndman@monash.edu}
+}
+
 }
 \keyword{internal}

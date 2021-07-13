@@ -2,12 +2,12 @@
 % Please edit documentation in R/create.R
 \name{working-dir}
 \alias{working-dir}
-\alias{create_bare_dir}
+\alias{create_layout_dir}
 \alias{create_workshop_dir}
 \alias{create_teaching_dir}
 \title{Create skeleton working directories}
 \usage{
-create_bare_dir(
+create_layout_dir(
   code,
   name = code,
   proj_name = paste0(name, "-private"),
@@ -22,20 +22,18 @@ create_workshop_dir(
   code,
   name = code,
   full_name = name,
-  destdir = getOption("monash.workshop_dir"),
+  destdir = getOption("monash.workshop.dir"),
   rstudio = TRUE,
-  open = TRUE,
-  layout = layout_workshop_dir
+  open = TRUE
 )
 
 create_teaching_dir(
   code,
   name = code,
   full_name = name,
-  destdir = getOption("monash.teaching_dir"),
+  destdir = getOption("monash.teaching.dir"),
   rstudio = TRUE,
-  open = TRUE,
-  layout = NULL
+  open = TRUE
 )
 }
 \arguments{
@@ -60,7 +58,7 @@ Functions to create a default directory structure.
 }
 \section{Functions}{
 \itemize{
-\item \code{create_bare_dir}: Create a directory structure specified by \code{layout}.
+\item \code{create_layout_dir}: Create a directory structure specified by \code{layout}.
 
 \item \code{create_workshop_dir}: Create a skeleton workshop directory.
 
