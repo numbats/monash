@@ -16,7 +16,6 @@ knitr::opts_chunk$set(
 # monash
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 The `monash` R-package is a utility package with consolidated tools and templates for staffs at Monash University. The package contains three primary themes:
@@ -36,20 +35,27 @@ remotes::install_github("numbats/monash")
 
 ## Get Monash logo
 
-```{r logo, out.height = "100px", out.width="auto", fig.align='center'}
+You can get a copy of the logo into the directory you wish with below.
+
+```{r logo}
 # default logo
-monash::logo_insert(path = "man/figures")
+monash::logo_get(path = "man/figures")
 # black and white & one-line version of the logo
-monash::logo_insert(path = "man/figures", color = "black", stack = FALSE)
+monash::logo_get(path = "man/figures", color = "black", stack = FALSE, filename = "monash-logo-black.png")
 ```
+
+And then you can reference the logo file that you copied. 
+
+![](man/figures/monash-stacked-blue-rgb.png)
+![](man/figures/monash-logo-black.png)
+
 
 ## Get Monash brand colors
 
 These are handy commands to quickly see Monash brand colors and be able to copy-and-paste the hex color codes. 
 
 ```{r}
-monash::color_primary_show()
-monash::color_secondary_show()
+monash::color_show()
 ```
 
 

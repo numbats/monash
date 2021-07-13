@@ -4,20 +4,17 @@
 # monash
 
 <!-- badges: start -->
-
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 The `monash` R-package is a utility package with consolidated tools and
 templates for staffs at Monash University. The package contains three
 primary themes:
 
-  - **workflow**: automating repetitive tasks, particularly teaching
+-   **workflow**: automating repetitive tasks, particularly teaching
     related activities;
-  - **template**: Monash branded R Markdown templates for teaching,
+-   **template**: Monash branded R Markdown templates for teaching,
     presentation, etc; and
-  - **data**: easy access to relevant information (may require access
+-   **data**: easy access to relevant information (may require access
     privileges).
 
 ## Installation
@@ -31,21 +28,23 @@ remotes::install_github("numbats/monash")
 
 ## Get Monash logo
 
+You can get a copy of the logo into the directory you wish with below.
+
 ``` r
 # default logo
-monash::logo_insert(path = "man/figures")
+monash::logo_get(path = "man/figures")
 #> ✔ The 'monash-stacked-blue-rgb.png' is now in 'man/figures/'
-```
-
-<img src="man/figures/monash-stacked-blue-rgb.png" width="auto" height="100px" style="display: block; margin: auto;" />
-
-``` r
+#> man/figures/monash-stacked-blue-rgb.png
 # black and white & one-line version of the logo
-monash::logo_insert(path = "man/figures", color = "black", stack = FALSE)
-#> ✔ The 'monash-one-line-black-rgb.png' is now in 'man/figures/'
+monash::logo_get(path = "man/figures", color = "black", stack = FALSE, filename = "monash-logo-black.png")
+#> ✔ The 'monash-logo-black.png' is now in 'man/figures/'
+#> man/figures/monash-logo-black.png
 ```
 
-<img src="man/figures/monash-one-line-black-rgb.png" width="auto" height="100px" style="display: block; margin: auto;" />
+And then you can reference the logo file that you copied.
+
+![](man/figures/monash-stacked-blue-rgb.png)
+![](man/figures/monash-logo-black.png)
 
 ## Get Monash brand colors
 
@@ -53,21 +52,15 @@ These are handy commands to quickly see Monash brand colors and be able
 to copy-and-paste the hex color codes.
 
 ``` r
-monash::color_primary_show()
+monash::color_show()
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
 
-    #>      blue     black     white    gray80    gray50    gray10 
-    #> "#006DAE" "#000000" "#FFFFFF" "#5A5A5A" "#969696" "#E6E6E6"
-    monash::color_secondary_show()
-
-<img src="man/figures/README-unnamed-chunk-2-2.png" width="100%" />
-
-    #>      blue    purple   fuchsia      ruby      pink       red    orange     umber 
-    #> "#027EB6" "#746FB2" "#9651A0" "#C8008F" "#ee64a4" "#EE0220" "#D93F00" "#795549" 
-    #>     olive     green 
-    #> "#6F7C4D" "#008A25"
+    #>      blue     black     white    gray80    gray50    gray10      blue    purple 
+    #> "#006DAE" "#000000" "#FFFFFF" "#5A5A5A" "#969696" "#E6E6E6" "#027EB6" "#746FB2" 
+    #>   fuchsia      ruby      pink       red    orange     umber     olive     green 
+    #> "#9651A0" "#C8008F" "#ee64a4" "#EE0220" "#D93F00" "#795549" "#6F7C4D" "#008A25"
 
 ## Settings
 
