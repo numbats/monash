@@ -14,16 +14,6 @@
 #' @name working-dir
 NULL
 
-eval_inline <- function(text) {
-  exprs <- stringr::str_match_all(text, "`r ([^`]+)`")[[1]][, 2]
-  out <- unname(sapply(exprs, function(aexpr) eval(parse(text = aexpr))))
-  text_new <- text
-  for(a in out) {
-    text_new <- stringr::str_replace(text_new, "`r [^`]+`", as.character(a))
-  }
-  text_new
-}
-
 create_folder_structure <- function(layout, parent = "./") {
   for(afolder in names(layout)) {
     if(afolder==".files") {
@@ -40,7 +30,7 @@ create_folder_structure <- function(layout, parent = "./") {
 
 #' @describeIn working-dir Create a directory structure specified by `layout`.
 #' @export
-create_bare_dir <- function(code,
+create_layout_dir <- function(code,
                             name = code,
                             proj_name = paste0(name, "-private"),
                             full_name = name,
@@ -69,33 +59,29 @@ create_bare_dir <- function(code,
       on.exit()
     }
   }
-
   invisible(usethis::proj_get())
-
 }
 
 
 #' @describeIn working-dir Create a skeleton workshop directory.
 #' @export
 create_workshop_dir <- function(code, name = code, full_name = name,
-                                destdir = getOption("monash.workshop_dir"),
-                                rstudio = TRUE, open = TRUE,
-                                layout = layout_workshop_dir) {
-  layout <- layout %||% system.file("templates", "_workshop_structure.yml", package = "monash")
+                                destdir = getOption("monash.workshop.dir"),
+                                rstudio = TRUE, open = TRUE) {
+  layout <- system.file("templates", "_workshop_structure.yml", package = "monash")
   destdir <- destdir %||% getwd()
-  create_bare_dir(code, name = name, full_name = full_name, destdir = destdir,
+  create_layout_dir(code, name = name, full_name = full_name, destdir = destdir,
                   rstudio = rstudio, layout = layout, open = open)
 }
 
 #' @describeIn working-dir Create a skeleton teaching directory.
 #' @export
 create_teaching_dir <- function(code, name = code, full_name = name,
-                                destdir = getOption("monash.teaching_dir"),
-                                rstudio = TRUE, open = TRUE,
-                                layout = NULL) {
-  layout <- layout %||% system.file("templates", "_teaching_structure.yml", package = "monash")
+                                destdir = getOption("monash.teaching.dir"),
+                                rstudio = TRUE, open = TRUE) {
+  layout <- system.file("templates", "_teaching_structure.yml", package = "monash")
   destdir <- destdir %||% getwd()
-  create_bare_dir(code, name = name, full_name = full_name, destdir = destdir,
+  create_layout_dir(code, name = name, full_name = full_name, destdir = destdir,
                   rstudio = rstudio, layout = layout, open = open)
 }
 

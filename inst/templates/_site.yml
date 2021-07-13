@@ -1,4 +1,4 @@
-name: "ETC5521: Exploratory Data Analysis"
+name: "ETCXXX: Your Course Name"
 output_dir: "docs"
 output:
   html_document:
@@ -6,17 +6,17 @@ output:
     highlight: textmate
     css: site/styles.css
 navbar:
-  title: "ETC5521: Exploratory Data Analysis"
+  title: "ETCXXX: Your Course Name"
   left:
     - text: "Home"
       icon: fa-home
       href: index.html
     - text: "Moodle"
       icon: fa-archive
-      href: https://lms.monash.edu/course/view.php?id=81234
+      href: https://lms.monash.edu/course/view.php?id=XXXXX
     - text: "Unit Guide"
       icon: fa-book
-      href: https://handbook.monash.edu/2020/units/ETC5521
+      href: https://handbook.monash.edu/2021/units/ETCXXXX
   right:
     - icon: fa-github fa-lg
-      href: https://github.com/numbats/eda
+      href: https://github.com/numbats/XXX

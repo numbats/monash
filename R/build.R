@@ -1,8 +1,9 @@
 
-render_website <- function(data, path = "") {
-
+render_website <- function(data, path = "docs/") {
+  create_directory(path)
 }
 
+# from pkgdown
 render_template <- function(path, data) {
   template <- read_file(path)
   if (length(template) == 0)
@@ -10,3 +11,5 @@ render_template <- function(path, data) {
 
   whisker::whisker.render(template, data)
 }
+
+
