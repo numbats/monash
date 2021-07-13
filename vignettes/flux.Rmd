@@ -1,0 +1,27 @@
+---
+title: "FLUX"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{flux}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+FLUX is an interactive polling tool. This tool can be used to create quizzes or polls that students can answer in class or at a scheduled time period. If you want to record the response for attendance record or marking purposes, you need to make sure students are signed in. 
+
+Staff and students can log in with their account to flux by going to:
+
+<center>
+https://flux.qa/
+</center>
+
+
+## Copying and archiving old polls
+
+You can make a copy of old polls by using the cloning feature as demonstrated in the video below. Similarly, you can archive old polls that are no longer active.
+
+<video width="640" height="480" controls>
+  <source src="supp/cloning-a-unit.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
