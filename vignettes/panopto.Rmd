@@ -2,7 +2,6 @@
 title: "Panopto Guide "
 output:
   rmarkdown::html_vignette:
-    toc: true
 vignette: >
   %\VignetteIndexEntry{panopto}
   %\VignetteEngine{knitr::rmarkdown}
@@ -22,16 +21,12 @@ Panopto is one of the learning technologies Monash University uses for video man
 
 ## Panopto Screen Orientation Guides
 
-Panopto Screen Orientation Guides: A comprehensive guide on basic functions of Panopto. You can find the link here : 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/panopto-screen-orientation-guides 
 
 
 ## Add Panopto Block Guide
 
-To use Panopto, you'll first need to add the Panopto block to your Moodle unit and provision your unit. This only needs to be done once per unit. 
-
-The link towards detailed guide is here :
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/add-panopto-block 
 
@@ -39,35 +34,24 @@ https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/ad
 ## Recording, Inserting & Uploading Video Content in Moodle with Panopto
 
 
-
-Panopto allows you to record new videos or upload existing videos directly into Moodle anywhere a text editor function is available.  
-
-You can find more information in the guide here : 
-
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/recording,-inserting-and-uploading-video-content-in-moodle
 
 ### Setting up assignment feedback
 
-Information on embedding videos using Panopto in labels, forums, books etc can be found here :
 
 https://monash.au.panopto.com/Panopto/Pages/Viewer.aspx?id=9e08b893-10c1-4e9b-b825-a9970045cefe 
 
 ### Setting up assignments 
 
-Information on allowing students to submit video assignments to assignment folders is found here : 
-
 https://monash.au.panopto.com/Panopto/Pages/Viewer.aspx?id=620ff299-3adf-4453-bfe7-ab8e00015634 
 
 ## Basic Editing with Panopto 
 
-The Panopto editor allows for easy web based editing from any modern browser. More information found here : 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/basic-editing-with-panopto
 
 ## Working with sessions
 
-
-Panopto videos, referred to as sessions, are composed of one or more streams, which may include video, powerpoint slides, screen capture, etc. You can add interactions to the session, such as quizzes and web links. This guide can be found here: 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/sessions-using-panopto
 
@@ -81,60 +65,43 @@ https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/wo
 
 ## Viewing Statistics and Analytics for Panopto videos
 
-Panopto statistics provide academics insight into the viewing behaviours of students. You can view statistics for sessions or folders. More information can be found in this guide :
-
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/viewing-statistics-and-analytics
 
 
 ## Adding PowerPoint slides to a Panopto video
-
-Adding a PowerPoint presentation to your sessions is a good way of engaging with students and delivering additional audio visual information. You can find more information here : 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/adding-powerpoint-slides
 
 ## Upload a PDF into a Panopto video
 
 
-Uploading a PDF to your session, allows your students to refer to extra notes that you may have created after recording the session. While viewing the session, students can toggle between the screen recording and the PDF. Check the link for more information. 
-
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/upload-a-pdf 
 
 ## Inserting a quiz into a Panopto video 
 
 
-Check the link for more information. 
-
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/creating-quizzes
 
 ## Using captions
 
-Panopto has the ability to add Automated Speech Recognition (ASR) generated captions to your sessions. This means you can view a session and read a text based version of the content. Visit the link below to find out how. 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/using-captions
 
 ## Deleting content streams in Panopto videos
-
-Panopto allows users to record multiple syncronous video streams. If you wish to delete a secondary stream in instances where the content is redundant you can do this. 
-
-Visit the link for more information. 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/deleting-streams 
 
 
 ## Using Notes in Panopto 
 
-Panopto allows you to make time-stamped notes to the video. Notes will appear time-stamped to the point in the session when they were entered.  Check the link given below to find out more. 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/using-notes 
 
 ## Podcasts (Panopto)
 
-Panopto makes MP4 (audio) and MP4 (audio and video) versions of every recording available through podcasts and RSS feeds. By subscribing to the feed, the podcast from each new recording within a folder will automatically be downloaded. The downloaded content can then be listened to or viewed using any device capable of playing back MP4 files. Check the link below for more information.
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/using-podcasts
 
 ## Setting up Panopto assignments
-
-Video assignments are a great way to engage students and get them to showcase their skills or knowledge. There are a variety of ways you could use video assignments, including getting students to do a group video presentation, showcase communication skills, demonstrate language skills, demonstrate their process or performance, or having them collaborate and develop a video on a specific topic. You can find more information in the guide below. 
 
 https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/panopto-assignments
