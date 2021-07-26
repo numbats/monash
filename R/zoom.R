@@ -1,0 +1,91 @@
+
+#' Link attendance record to google sheet
+#'
+#' @param .data The summary data frame with email, total and letter grade.
+#' @param .sheet The link to the googlesheet
+#' @param sheetname The name of the sheet
+#' @param week The week number
+#'
+#'
+#' @export
+zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week) {
+  df <- googlesheets4::read_sheet(.sheet, sheetname, skip = 3,
+                            col_names = c("id", paste0("wk", 1:12), "away", "excused", "absent", "x"))
+
+  out <- .data %>%
+    mutate(id = stringr::str_match(email, "([a-zA-Z0-9]+)@.+")[,2])
+  df %>%
+    select("id", old = paste0("wk", week)) %>%
+    left_join(select(out, id, letter)) %>%
+    mutate(letter = ifelse(is.na(letter), "U", letter),
+           letter = ifelse(is.na(old), letter, old)) %>%
+    select(-old)
+}
+
+#' This reads in the zoom report
+#'
+#' The zoom meeting report is expected to have the meeting
+#' information and uncheck the "unique users" so that the
+#' record for start and end time exists. The latter is
+#' required so that total time for students is recorded
+#' from the start of the lecture to the end of the time and
+#' not because the student happens to be lingering before/after.
+#'
+#' In order to identify the student, the zoom meeting should be
+#' set to authenticate and restricted to Monash id alone.
+#' This makes the data linkage easier with record in LMS.
+#' @param file The file name for the zoom meeting report.
+#' @param info TRUE or FALSE of whether the meeting information is included in the file.
+#'
+#' @export
+#' @importFrom readr read_csv cols col_character col_datetime col_double
+zoom_read <- function(file, info = TRUE) {
+  nskip <- ifelse(info, 4, 1)
+  read_csv(file, skip = nskip,
+                 col_names = c("name", "email", "join", "leave", "duration", "guest", "consent"),
+                 col_types = cols(
+                   name = col_character(),
+                   email = col_character(),
+                   join = col_datetime("%m/%d/%Y %I:%M:%S %p"),
+                   leave = col_datetime("%m/%d/%Y %I:%M:%S %p"),
+                   duration = col_double(),
+                   guest = col_character(),
+                   consent = col_character()
+                 ))
+
+}
+
+#' Process the data frame from zoom meeting to total duration of attendance
+#'
+#' @param start,end A date time of when the zoom meeting started or ended.
+#' If NA, this is ignored. If the date time is supplied, then the time is censored.
+#' @param length The total length of the session in minutes.
+#' @param accept A named numeric vector that signifies the minimum required amount for the letter grade.
+#' @import dplyr
+#' @export
+zoom_process <- function(.data, start = NA, end = NA, length = 120,
+                                accept = c("A" = length * 1/2, "P" = length * 3/4)) {
+  if(!is.na(start)) {
+    .data <- .data %>%
+      mutate(join = case_when(join < start ~ start,
+                              TRUE ~ join)) %>%
+      filter(leave >= start)
+  }
+  if(!is.na(end)) {
+    .data <- .data %>%
+      mutate(leave = case_when(leave > end ~ end,
+                               TRUE ~ leave)) %>%
+      filter(start <= end)
+  }
+  out <- .data %>%
+    mutate(duration = leave - join) %>%
+    group_by(email) %>%
+    summarise(total = sum(duration))
+  if(length(accept)) {
+    accept <- c(-sort(-accept), "U" = -1)
+    f <- rlang::parse_exprs(purrr::imap_chr(accept, ~glue::glue("total > {.x * 60} ~ '{.y}'")))
+    out <- out %>%
+      mutate(letter = case_when(!!!f))
+  }
+  out
+}
