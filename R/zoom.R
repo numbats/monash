@@ -8,18 +8,30 @@
 #'
 #'
 #' @export
-zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week) {
+zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
+                            upload = FALSE) {
   df <- googlesheets4::read_sheet(.sheet, sheetname, skip = 3,
                             col_names = c("id", paste0("wk", 1:12), "away", "excused", "absent", "x"))
 
   out <- .data %>%
     mutate(id = stringr::str_match(email, "([a-zA-Z0-9]+)@.+")[,2])
-  df %>%
+  out <- df %>%
     select("id", old = paste0("wk", week)) %>%
     left_join(select(out, id, letter)) %>%
     mutate(letter = ifelse(is.na(letter), "U", letter),
            letter = ifelse(is.na(old), letter, old)) %>%
     select(-old)
+
+  if(upload) {
+    cli::cat_bullet("Uploading attendance to spreadsheet...", bullet_col = "red")
+    googlesheets4::range_write(
+      .sheet, out["letter"], sheet = sheetname,
+      range = paste0(LETTERS[2 + week], c(4,NROW(df)+3), collapse = ":"),
+      col_names = FALSE
+    )
+    cli::cli_alert_success("Attendance successfully uploaded 🎉")
+  }
+  out
 }
 
 #' This reads in the zoom report

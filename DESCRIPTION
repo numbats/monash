@@ -29,7 +29,8 @@ Imports:
     purrr,
     scales,
     desc,
-    yaml
+    yaml,
+    cli
 Suggests: 
     knitr,
     rmarkdown,
