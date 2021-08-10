@@ -48,18 +48,19 @@ zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
 #' This makes the data linkage easier with record in LMS.
 #' @param file The file name for the zoom meeting report.
 #' @param info TRUE or FALSE of whether the meeting information is included in the file.
-#'
+#' @param date_format A date format specification. See [`readr::parse_datetime()`]
+#'                    for more details.
 #' @export
 #' @importFrom readr read_csv cols col_character col_datetime col_double
-zoom_read <- function(file, info = TRUE) {
+zoom_read <- function(file, info = TRUE, date_format = "%m/%d/%Y %I:%M:%S %p") {
   nskip <- ifelse(info, 4, 1)
   read_csv(file, skip = nskip,
                  col_names = c("name", "email", "join", "leave", "duration", "guest", "consent"),
                  col_types = cols(
                    name = col_character(),
                    email = col_character(),
-                   join = col_datetime("%m/%d/%Y %I:%M:%S %p"),
-                   leave = col_datetime("%m/%d/%Y %I:%M:%S %p"),
+                   join = col_datetime(date_format),
+                   leave = col_datetime(date_format),
                    duration = col_double(),
                    guest = col_character(),
                    consent = col_character()

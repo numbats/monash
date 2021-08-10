@@ -4,7 +4,7 @@
 \alias{zoom_attendance}
 \title{Link attendance record to google sheet}
 \usage{
-zoom_attendance(.data, .sheet, sheetname = "Lecture", week)
+zoom_attendance(.data, .sheet, sheetname = "Lecture", week, upload = FALSE)
 }
 \arguments{
 \item{.data}{The summary data frame with email, total and letter grade.}

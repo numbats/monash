@@ -4,12 +4,15 @@
 \alias{zoom_read}
 \title{This reads in the zoom report}
 \usage{
-zoom_read(file, info = TRUE)
+zoom_read(file, info = TRUE, date_format = "\%m/\%d/\%Y \%I:\%M:\%S \%p")
 }
 \arguments{
 \item{file}{The file name for the zoom meeting report.}
 
 \item{info}{TRUE or FALSE of whether the meeting information is included in the file.}
+
+\item{date_format}{A date format specification. See \code{\link[readr:parse_datetime]{readr::parse_datetime()}}
+for more details.}
 }
 \description{
 The zoom meeting report is expected to have the meeting

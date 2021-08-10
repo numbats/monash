@@ -18,5 +18,10 @@ Authors:
   \item Rob Hyndman \email{Rob.Hyndman@monash.edu}
 }
 
+Other contributors:
+\itemize{
+  \item Mitchell O'Hara-Wild (\href{https://orcid.org/0000-0001-6729-7695}{ORCID}) [contributor]
+}
+
 }
 \keyword{internal}
