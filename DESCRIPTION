@@ -34,7 +34,8 @@ Imports:
     scales,
     desc,
     yaml,
-    cli
+    cli,
+    dplyr
 Suggests: 
     knitr,
     rmarkdown,
