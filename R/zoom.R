@@ -91,7 +91,7 @@ zoom_process <- function(.data, start = NA, end = NA, length = 120,
       filter(start <= end)
   }
   out <- .data %>%
-    mutate(duration = leave - join) %>%
+    mutate(duration = lubridate::period_to_seconds(as.period(leave - join))) %>%
     group_by(email) %>%
     summarise(total = sum(duration))
   if(length(accept)) {

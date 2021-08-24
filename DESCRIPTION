@@ -35,7 +35,8 @@ Imports:
     desc,
     yaml,
     cli,
-    dplyr
+    dplyr,
+    lubridate
 Suggests: 
     knitr,
     rmarkdown,
