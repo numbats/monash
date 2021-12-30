@@ -1,5 +1,5 @@
 Package: monash
-Title: Consolidated tools and templates for staffs at Monash University 
+Title: Consolidated tools and templates for staff at Monash University
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Emi",
@@ -15,7 +15,7 @@ Authors@R:
              family = "O'Hara-Wild",
              role = c("ctb"), 
              comment = c(ORCID = "0000-0001-6729-7695")))
-Description: What the package does (one paragraph).
+Description: Rmarkdown templates and other tools for use at Monash University, Department of Econometrics & Business Statistics.
 License: GPL-3
 Encoding: UTF-8
 Language: en

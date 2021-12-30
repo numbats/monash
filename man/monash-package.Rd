@@ -4,11 +4,11 @@
 \name{monash-package}
 \alias{monash}
 \alias{monash-package}
-\title{monash: Consolidated tools and templates for staffs at Monash University}
+\title{monash: Consolidated tools and templates for staff at Monash University}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-What the package does (one paragraph).
+Rmarkdown templates and other tools for use at Monash University, Department of Econometrics & Business Statistics.
 }
 \author{
 \strong{Maintainer}: Emi Tanaka \email{dr.emi.tanaka@gmail.com} (\href{https://orcid.org/0000-0002-1455-259X}{ORCID})
