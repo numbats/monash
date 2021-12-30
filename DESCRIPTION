@@ -23,11 +23,16 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
+    bookdown,
     cli,
+    clipr,
+    clisymbols,
+    crayon,
     desc,
     dplyr,
     fs,
     glue,
+    googlesheets4,
     lubridate,
     purrr,
     readr,
@@ -35,6 +40,7 @@ Imports:
     rprojroot,
     rstudioapi,
     scales,
+    stringr,
     usethis,
     vctrs,
     whisker,
