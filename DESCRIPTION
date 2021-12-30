@@ -23,21 +23,24 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
+    cli,
+    desc,
+    dplyr,
+    fs,
+    glue,
+    lubridate,
+    purrr,
+    readr,
+    rlang,
     rprojroot,
     rstudioapi,
-    fs,
+    scales,
     usethis,
-    rlang,
     vctrs,
     whisker,
-    purrr,
-    scales,
-    desc,
-    yaml,
-    cli,
-    dplyr,
-    lubridate
+    yaml
 Suggests: 
+    binb,
     knitr,
     rmarkdown,
     testthat
