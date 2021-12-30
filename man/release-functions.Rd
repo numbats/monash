@@ -7,11 +7,32 @@
 \alias{release_tutorial_solution}
 \title{Release materials}
 \usage{
-release_lecture(9) # to release week 9 lecture
+release_lecture(
+  week,
+  dir = "tutorials",
+  output_dir = "release",
+  ignore = getOption("monash.lecture.ignore"),
+  interactive = rlang::is_interactive(),
+  overwrite = TRUE
+)
 
-release_tutorial(9) # to release week 9 tutorial
+release_tutorial(
+  week,
+  dir = "tutorials",
+  output_dir = "release",
+  ignore = getOption("monash.tutorial.ignore"),
+  interactive = rlang::is_interactive(),
+  overwrite = TRUE
+)
 
-release_tutorial_solution(9) # to release week 9 tutorial solution
+release_tutorial_solution(
+  week,
+  dir = "tutorials",
+  output_dir = "release",
+  ignore = getOption("monash.tutorial.ignore"),
+  interactive = rlang::is_interactive(),
+  overwrite = TRUE
+)
 }
 \arguments{
 \item{week}{the week number}
@@ -28,4 +49,12 @@ release_tutorial_solution(9) # to release week 9 tutorial solution
 }
 \description{
 Release materials
+}
+\examples{
+\dontrun{
+release_lecture(9) # to release week 9 lecture
+release_tutorial(9) # to release week 9 tutorial
+release_tutorial_solution(9) # to release week 9 tutorial solution
+}
+
 }
