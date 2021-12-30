@@ -14,6 +14,8 @@ zoom_attendance(.data, .sheet, sheetname = "Lecture", week, upload = FALSE)
 \item{sheetname}{The name of the sheet}
 
 \item{week}{The week number}
+
+\item{upload}{Should the attendance be uploaded to a Google sheet?}
 }
 \description{
 Link attendance record to google sheet
