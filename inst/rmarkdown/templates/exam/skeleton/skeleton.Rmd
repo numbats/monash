@@ -10,7 +10,7 @@ examperiod: Examination Period
 openbook: false
 calculators: true
 output: 
-  MonashEBSTemplates::exam:
+  monash::exam:
     fig_caption: true
     fig_height: 3.7
     fig_width: 6
@@ -22,7 +22,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, cache=TRUE)
-library(fpp2)
+library(tidyverse)
 ```
 
 **The exam contains FIVE questions. ALL questions must be answered. The exam is worth 100 marks in total.**

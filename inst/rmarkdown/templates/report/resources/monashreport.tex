@@ -98,7 +98,7 @@ $if(geometry)$
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 $else$
 \usepackage{geometry}
-\geometry{a4paper, centering, text={16cm,24cm}}
+\geometry{a4paper, centering, text={16cm,25cm}}
 $endif$
 $if(lang)$
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -350,7 +350,7 @@ $endif$
 \DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
 \makeatother
 
-\author{$for(author)$\sf\Large\textbf{$author.title$ $author.othernames$ $author.familyname$}\\ {\sf\large $author.qualifications$\\[0.5cm]}$sep$ $endfor$}
+\author{\sf$for(author)${\Large\textbf{$if(author.title)$$author.title$ $endif$$author.othernames$ $author.familyname$}\\\large $author.qualifications$\\[0.5cm]}$endfor$}
 
 $if(date)$
 \date{$date$}
@@ -395,12 +395,15 @@ $endif$
 
 \def\webaddress{\url{http://buseco.monash.edu/ebs/consulting/}}
 \def\abn{12 377 614 012}
-\def\logo{\includegraphics[width=6cm]{MBSportrait}}
 \def\extraspace{\vspace*{1.6cm}}
 \makeatletter
 \def\contactdetails{\faicon{phone} & \@telephone \\
                     \faicon{envelope} & \@email}
 \makeatother
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
 
 %%%% FRONT PAGE OF REPORTS
 
@@ -408,14 +411,22 @@ $endif$
 
 \long\def\front#1#2#3{
 \newpage
+\begin{textblock}{7}(12.7,28.2)\hfill
+\includegraphics[height=0.6cm]{AACSB}~~~
+\includegraphics[height=0.6cm]{EQUIS}~~~
+\includegraphics[height=0.6cm]{AMBA}
+\end{textblock}
 \begin{singlespacing}
 \thispagestyle{empty}
 \vspace*{-1.4cm}
 \hspace*{-1.4cm}
 \hbox to 16cm{
   \hbox to 6.5cm{\vbox to 14cm{\vbox to 25cm{
-    \logo
+    \includegraphics[width=6cm]{monash2}
     \vfill
+    \includegraphics[width=3.5cm]{MBSportrait}
+    \vspace{0.4cm}
+    \par
     \parbox{6.3cm}{\raggedright
       \sf\color[rgb]{0.00,0.00,0.70}
       {\large\textbf{\name}}\par

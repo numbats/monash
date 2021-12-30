@@ -11,7 +11,7 @@ toaddress: University of Montpellier
 opening: Dear Jacques
 closing: Best wishes
 spacing: 1.4
-output: MonashEBSTemplates::letter
+output: monash::letter
 ---
 
 I am writing to ask you to \dots
