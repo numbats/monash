@@ -458,6 +458,8 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
+% Adjust headwidth in case user has changed geometry in header-includes
+\renewcommand{\headwidth}{\textwidth}
 
 \begin{document}
 $if(title)$
