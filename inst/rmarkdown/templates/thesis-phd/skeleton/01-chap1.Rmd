@@ -29,7 +29,7 @@ For details on using _R Markdown_ see <http://rmarkdown.rstudio.com>.
 Included in this template is a file called `sales.csv`.  This contains quarterly data on Sales and Advertising budget for a small company over the period 1981--2005. It also contains the GDP (gross domestic product) over the same period. All series have been adjusted for inflation.  We can load in this data set using the following code:
 
 ```{r loaddata, echo=TRUE}
-sales <- readr::read_csv("~/Untitled/data/sales.csv") %>%
+sales <- readr::read_csv("data/sales.csv") %>%
   rename(Quarter = `...1`) %>%
   mutate(
     Quarter = as.Date(paste0("01-",Quarter), "%d-%b-%y"),
