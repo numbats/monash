@@ -93,10 +93,10 @@ zoom_process <- function(.data, start = NA, end = NA, length = 120,
   out <- .data %>%
     mutate(duration = leave - join) %>%
     group_by(email) %>%
-    summarise(total = sum(duration))
+    summarise(total = sum(as.numeric(duration)))
   if(length(accept)) {
     accept <- c(-sort(-accept), "U" = -1)
-    f <- rlang::parse_exprs(purrr::imap_chr(accept, ~glue::glue("total > {.x * 60} ~ '{.y}'")))
+    f <- rlang::parse_exprs(purrr::imap_chr(accept, ~glue::glue("total > {.x} ~ '{.y}'")))
     out <- out %>%
       mutate(letter = case_when(!!!f))
   }
