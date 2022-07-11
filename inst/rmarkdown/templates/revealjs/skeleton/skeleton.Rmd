@@ -1,0 +1,272 @@
+---
+pagetitle: "ETCXXXX: Course Name"
+subtitle: "Subtitle"
+author: "FirstName LastName"
+email: "XXX@monash.edu"
+date: "Week 1 Session A"
+department: "Department of Econometrics and Business Statistics"
+unit-url: "cwd.numbat.space"
+footer: "ETCXXXX Lecture 1"
+format: 
+  revealjs:
+    logo: images/monash-one-line-black-rgb.png
+    slide-number: true
+    multiplex: false
+    theme: assets/monash.scss
+    show-slide-number: all
+    show-notes: true
+    controls: true
+    width: 1280
+    height: 720
+    css: [assets/tachyons-addon.css, assets/custom.css]
+    include-after-body: "assets/after-body.html"
+execute:
+  echo: true
+---
+
+
+```{r, include = FALSE}
+current_file <- knitr::current_input()
+basename <- gsub(".[Rq]md$", "", current_file)
+
+knitr::opts_chunk$set(
+  fig.path = sprintf("images/%s/", basename),
+  fig.width = 6,
+  fig.height = 4,
+  fig.align = "center",
+  out.width = "100%",
+  fig.retina = 3,
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE,
+  cache.path = "cache/"
+)
+```
+
+
+## [`r rmarkdown::metadata$pagetitle`]{.monash-blue} {#title-slide}
+
+<br>
+
+### `r rmarkdown::metadata$subtitle`
+
+Lecturer: *`r rmarkdown::metadata$author`*
+
+`r rmarkdown::metadata$department`
+
+
+::: {.tl}
+
+<br>
+
+
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-envelope"></i></span>`r rmarkdown::metadata$email`</li>
+<li><span class="fa-li"><i class="fas fa-calendar-alt"></i></span> `r rmarkdown::metadata$date`</li>
+<li><span class="fa-li"><i class="fa-solid fa-globe"></i></span><a href="`r rmarkdown::metadata[["unit-url"]]`">`r rmarkdown::metadata[["unit-url"]]`</a></li>
+</ul>
+
+<br>
+
+:::
+
+## Change file extension
+
+:::{.callout-important}
+
+Because there are yet no Quarto templates option via RStudio, the skeleton file is disguised as a Rmd template for now. 
+
+Please change the extension from `.Rmd` to `qmd` when using this template.
+
+:::
+
+
+## Quarto Revealjs Basics 
+
+For basics go to [https://quarto.org/docs/presentations/revealjs/](https://quarto.org/docs/presentations/revealjs/)
+
+<iframe src="https://quarto.org/docs/presentations/revealjs/" width="100%" height="100%"></iframe>
+
+
+
+## Monash Color Palettes
+
+
+::: {.flex .f3}
+
+::: w-33
+
+* [`.monash-blue`]{.monash-blue}
+* [`.monash-black`]{.monash-black}
+* [`.monash-gray80`]{.monash-gray80}
+* [`.monash-gray50`]{.monash-gray50}
+* [`.monash-gray10`]{.monash-gray10}
+* [`.monash-bg-blue`]{.monash-bg-blue .monash-white}
+* [`.monash-bg-black`]{.monash-bg-black .monash-white}
+* [`.monash-bg-gray80`]{.monash-bg-gray80 .monash-white}
+* [`.monash-bg-gray50`]{.monash-bg-gray50 .monash-white}
+* [`.monash-bg-gray10`]{.monash-bg-gray10 .monash-white}
+
+:::
+
+::: w-33
+
+* [`.monash-blue2`]{.monash-blue2}
+* [`.monash-purple2`]{.monash-purple2}
+* [`.monash-fuchsia2`]{.monash-fuchsia2}
+* [`.monash-ruby2`]{.monash-ruby2}
+* [`.monash-pink2`]{.monash-pink2}
+* [`.monash-red2`]{.monash-red2}
+* [`.monash-orange2`]{.monash-orange2}
+* [`.monash-umber2`]{.monash-umber2}
+* [`.monash-olive2`]{.monash-olive2}
+* [`.monash-green2`]{.monash-green2}
+
+:::
+
+::: w-33
+
+* [`.monash-bg-blue2`]{.monash-bg-blue2 .monash-white}
+* [`.monash-bg-purple2`]{.monash-bg-purple2 .monash-white}
+* [`.monash-fbg-uchsia2`]{.monash-bg-fuchsia2 .monash-white}
+* [`.monash-bg-ruby2`]{.monash-bg-ruby2 .monash-white}
+* [`.monash-bg-pink2`]{.monash-bg-pink2 .monash-white}
+* [`.monash-bg-red2`]{.monash-bg-red2 .monash-white}
+* [`.monash-bg-orange2`]{.monash-bg-orange2 .monash-white}
+* [`.monash-bg-umber2`]{.monash-bg-umber2 .monash-white}
+* [`.monash-bg-olive2`]{.monash-bg-olive2 .monash-white}
+* [`.monash-bg-green2`]{.monash-bg-green2 .monash-white}
+
+:::
+
+:::
+
+
+
+
+## Box types
+
+::: flex
+
+::: w-50
+:::{.callout-note}
+`.callout-note`
+
+Assignment 1 is **due 18th May**
+:::
+
+:::{.callout-important}
+`.callout-important`
+
+Your turn!
+:::
+
+:::{.callout-caution}
+`.callout-caution`
+
+Your turn!
+:::
+
+:::
+
+::: {.w-50 .pl3}
+:::{.callout-tip}
+`.callout-tip`
+
+Go [here](https://quarto.org/docs/authoring/callouts.html) to find more about callouts.
+
+:::
+
+:::{.callout-warning}
+`.callout-warning`
+
+Your turn!
+:::
+
+:::{.callout-tip appearance="simple"}
+
+## Customisation
+
+Change appearance from `appearance="default"` to<Br> `"simple"` or `"minimal"`.
+
+
+:::
+
+:::
+
+:::
+
+
+
+
+
+# Tachyons
+
+
+::: {.f1.measure}
+There are a number of CSS elements borrowed from Tachyons
+
+http://tachyons.io/docs/
+
+:::
+
+::: fragment
+
+<br>
+
+You can find this in `assets/tacyons-addon.css`.
+
+:::
+
+::: fragment
+
+<br><br>
+
+Only a few features are shown in the next couple of slides.
+
+:::
+
+
+
+## Font sizes and Text decorations
+
+[`.f-headline[]`]{.f-headline} or [`.f-6[]`]{.f-6}
+
+[`.f-subheadline[]`]{.f-subheadline} or [`.f-5[]`]{.f-5}
+
+[`.f1[]`]{.f1}
+[`.f2[]`]{.f2}
+[`.f3[]`]{.f3}
+[`.f4[]`]{.f4}
+[`.f5[]`]{.f5}
+[`.f6[]`]{.f6}
+[`.f7[]`]{.f7}
+
+
+[`.underline[]`]{.underline}
+
+[`.strike[]`]{.strike}
+
+
+## Scroll boxes
+
+`.overflow-scroll .h5`
+
+::: {.overflow-scroll .h5}
+```{r}
+mtcars
+```
+:::
+
+
+`.overflow-scroll .h-25`
+
+::: {.overflow-scroll .h-25}
+```{r}
+mtcars
+```
+:::
+
+`.h-XX` come in 5% increments from 25 to 100%.
+

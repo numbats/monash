@@ -1,0 +1,238 @@
+/*-- scss:defaults --*/
+
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// fonts
+$font-family-sans-serif: Lato, sans-serif !default;
+
+// colors
+$body-bg: #fff !default;
+$body-color: #000 !default;
+$link-color: #00008b !default;
+$selection-bg: rgba(0, 0, 0, 0.99);
+
+// headings
+$presentation-heading-font: "News Cycle", sans-serif !default;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+
+.cell-output-stdout pre code {
+  background-color: #E8E8E8;
+}
+
+code span {
+  color: #007BA5;
+}
+
+div.sourceCode {
+  background-color: #181818;
+  color: #eaeaea;
+}
+
+div.sourceCode pre code {
+  background-color: #181818;
+  color: #eaeaea;
+}
+
+code span.at {
+  color: #7aa6da;
+}
+
+code span.ot {
+  color: #007BA5;
+}
+
+code span.ss {
+  color: #20794D;
+}
+
+code span.an {
+  color: #5E5E5E;
+}
+
+code span.fu {
+  color: #c397d8;
+}
+
+code span.st {
+  color: #b9ca4a;
+}
+
+code span.cf {
+  color: #007BA5;
+}
+
+code span.op {
+  color: #5E5E5E;
+}
+
+code span.er {
+  color: #AD0000;
+}
+
+code span.bn {
+  color: #AD0000;
+}
+
+code span.al {
+  color: #AD0000;
+}
+
+code span.va {
+  color: #111111;
+}
+
+code span.pp {
+  color: #AD0000;
+}
+
+code span.in {
+  color: #5E5E5E;
+}
+
+code span.vs {
+  color: #20794D;
+}
+
+code span.wa {
+  color: #5E5E5E;
+  font-style: italic;
+}
+
+code span.do {
+  color: #5E5E5E;
+  font-style: italic;
+}
+
+code span.ch {
+  color: #20794D;
+}
+
+code span.dt {
+  color: #AD0000;
+}
+
+code span.fl {
+  color: #AD0000;
+}
+
+code span.co {
+  color: #5E5E5E;
+}
+
+code span.cv {
+  color: #5E5E5E;
+  font-style: italic;
+}
+
+code span.cn {
+  color: #8f5902;
+}
+
+code span.sc {
+  color: #e78c45;
+}
+
+code span.dv {
+  color: #d54e53;
+}
+
+code span.kw {
+  color: #007BA5;
+}
+
+/****
+
+PRIMARY PALETTE
+
+Monash Blue is our most identifiable colour. It conveys youthfulness, possibility and openness. It should always be considered first.
+
+Black conveys prestige, timelessness and sophistication.
+
+White is often shown as white space and conveys the brand personality of being open and youthful.
+
+Greys can be any percentage of black and provides additional flexibility to our primary colour palette.
+
+The primary colour palette is preferred for digital work.
+
+****/
+
+.monash-bg-blue { background-color: #006DAE!important; }
+.monash-bg-gray80 { background-color: #5A5A5A!important; }
+.monash-bg-gray50 { background-color: #969696!important; }
+.monash-bg-gray10 { background-color: #E6E6E6!important; }
+.monash-bg-white { background-color: #FFFFFF!important; }
+.monash-bg-black { background-color: #000000!important; }
+
+.monash-blue, .monash-blue code, .monash-blue a { color: #006DAE!important; }
+.monash-black, .monash-black code, .monash-black a { color: #000000!important; }
+.monash-white, .monash-white code, .monash-white a { color: #FFFFFF!important; }
+.monash-gray80, .monash-gray80 code, .monash-gray80 a { color: #5A5A5A!important; }
+.monash-gray50, .monash-gray50 code, .monash-gray50 a { color: #969696!important; }
+.monash-gray10, .monash-gray10 code, .monash-gray10 a { color: #E6E6E6!important; }
+
+.monash-border-blue { border-color: #006DAE!important; }
+.monash-border-black { border-color: #000000!important; }
+.monash-border-white { border-color: #FFFFFF!important; }
+.monash-border-gray80 { border-color: #5A5A5A!important; }
+.monash-border-gray50 { border-color: #969696!important; }
+.monash-border-gray10 { border-color: #E6E6E6!important; }
+
+/****
+
+SECONDARY PALETTE
+
+Inspired by the colours of our academic robes, we have a range of bright, colourful secondary colours.
+
+Secondary colours are to be used:
+
+* in charts and diagrams to highlight key findings
+* as headings and subheadings
+* sparingly to provide highlights or accents – ideally one or two secondary colours per double page spread
+* to speak to a particular audience group. For instance, colours that would resonate best with our prospective undergraduate audience would be colourful, bright and youthful. Industry and research would suit a more corporate/mature choice to reflect focus and prestige.
+
+****/
+
+
+.monash-bg-blue2 { background-color: #027EB6!important; }
+.monash-bg-purple2 { background-color: #746FB2!important; }
+.monash-bg-fuchsia2 { background-color: #9651A0!important; }
+.monash-bg-ruby2 { background-color: #C8008F!important; }
+.monash-bg-pink2 { background-color: #ee64a4!important; }
+.monash-bg-red2 { background-color: #EE0220!important; }
+.monash-bg-orange2 { background-color: #D93F00!important; }
+.monash-bg-umber2 { background-color: #795549!important; }
+.monash-bg-olive2 { background-color: #6F7C4D!important; }
+.monash-bg-green2 { background-color: #008A25!important; }
+
+.monash-border-blue2 { border-color: #027EB6!important; }
+.monash-border-purple2 { border-color: #746FB2!important; }
+.monash-border-fuchsia2 { border-color: #9651A0!important; }
+.monash-border-ruby2 { border-color: #C8008F!important; }
+.monash-border-pink2 { border-color: #ee64a4!important; }
+.monash-border-red2 { border-color: #EE0220!important; }
+.monash-border-orange2 { border-color: #D93F00!important; }
+.monash-border-umber2 { border-color: #795549!important; }
+.monash-border-olive2 { border-color: #6F7C4D!important; }
+.monash-border-green2 { border-color: #008A25!important; }
+
+.monash-blue2, .monash-blue2 code, .monash-blue2 a { color: #027EB6!important; }
+.monash-purple2, .monash-purple2 code, .monash-purple2 a { color: #746FB2!important; }
+.monash-fuchsia2, .monash-fuchsia2 code, .monash-fuchsia2 a { color: #9651A0!important; }
+.monash-ruby2, .monash-ruby2 code, .monash-ruby2 a { color: #C8008F!important; }
+.monash-pink2, .monash-pink2 code, .monash-pink2 a { color: #ee64a4!important; }
+.monash-red2, .monash-red2 code, .monash-red2 a { color: #EE0220!important; }
+.monash-orange2, .monash-orange2 code, .monash-orange2 a { color: #D93F00!important; }
+.monash-umber2, .monash-umber2 code, .monash-umber2 a { color: #795549!important; }
+.monash-olive2, .monash-olive2 code, .monash-olive2 a { color: #6F7C4D!important; }
+.monash-green2, .monash-green2 code, .monash-green2 a { color: #008A25!important; }
+
+
+
