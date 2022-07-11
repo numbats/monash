@@ -63,26 +63,33 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">zoom_process</span><span class="op">(</span>
-  <span class="va">.data</span>,
-  start <span class="op">=</span> <span class="cn">NA</span>,
-  end <span class="op">=</span> <span class="cn">NA</span>,
-  length <span class="op">=</span> <span class="fl">120</span>,
-  accept <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>A <span class="op">=</span> <span class="va">length</span> <span class="op">*</span> <span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, P <span class="op">=</span> <span class="va">length</span> <span class="op">*</span> <span class="fl">3</span><span class="op">/</span><span class="fl">4</span><span class="op">)</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">zoom_process</span><span class="op">(</span></span>
+<span>  <span class="va">.data</span>,</span>
+<span>  start <span class="op">=</span> <span class="cn">NA</span>,</span>
+<span>  end <span class="op">=</span> <span class="cn">NA</span>,</span>
+<span>  length <span class="op">=</span> <span class="fl">120</span>,</span>
+<span>  accept <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span>A <span class="op">=</span> <span class="va">length</span> <span class="op">*</span> <span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, P <span class="op">=</span> <span class="va">length</span> <span class="op">*</span> <span class="fl">3</span><span class="op">/</span><span class="fl">4</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>.data</dt>
 <dd><p>Data frame</p></dd>
+
+
 <dt>start, end</dt>
 <dd><p>A date time of when the zoom meeting started or ended.
 If NA, this is ignored. If the date time is supplied, then the time is censored.</p></dd>
+
+
 <dt>length</dt>
 <dd><p>The total length of the session in minutes.</p></dd>
+
+
 <dt>accept</dt>
 <dd><p>A named numeric vector that signifies the minimum required amount for the letter grade.</p></dd>
+
 </dl></div>
 
   </div>
@@ -97,7 +104,7 @@ If NA, this is ignored. If the date time is supplied, then the time is censored.
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer></div>

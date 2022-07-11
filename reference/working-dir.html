@@ -63,54 +63,69 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">create_layout_dir</span><span class="op">(</span>
-  <span class="va">code</span>,
-  name <span class="op">=</span> <span class="va">code</span>,
-  proj_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="va">name</span>, <span class="st">"-private"</span><span class="op">)</span>,
-  full_name <span class="op">=</span> <span class="va">name</span>,
-  destdir <span class="op">=</span> <span class="va">code</span>,
-  layout <span class="op">=</span> <span class="cn">NULL</span>,
-  rstudio <span class="op">=</span> <span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/rstudioapi/man/isAvailable.html" class="external-link">isAvailable</a></span><span class="op">(</span><span class="op">)</span>,
-  open <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/interactive.html" class="external-link">interactive</a></span><span class="op">(</span><span class="op">)</span>
-<span class="op">)</span>
-
-<span class="fu">create_workshop_dir</span><span class="op">(</span>
-  <span class="va">code</span>,
-  name <span class="op">=</span> <span class="va">code</span>,
-  full_name <span class="op">=</span> <span class="va">name</span>,
-  destdir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.workshop.dir"</span><span class="op">)</span>,
-  rstudio <span class="op">=</span> <span class="cn">TRUE</span>,
-  open <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span>
-
-<span class="fu">create_teaching_dir</span><span class="op">(</span>
-  <span class="va">code</span>,
-  name <span class="op">=</span> <span class="va">code</span>,
-  full_name <span class="op">=</span> <span class="va">name</span>,
-  destdir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.teaching.dir"</span><span class="op">)</span>,
-  rstudio <span class="op">=</span> <span class="cn">TRUE</span>,
-  open <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">create_layout_dir</span><span class="op">(</span></span>
+<span>  <span class="va">code</span>,</span>
+<span>  name <span class="op">=</span> <span class="va">code</span>,</span>
+<span>  proj_name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="va">name</span>, <span class="st">"-private"</span><span class="op">)</span>,</span>
+<span>  full_name <span class="op">=</span> <span class="va">name</span>,</span>
+<span>  destdir <span class="op">=</span> <span class="va">code</span>,</span>
+<span>  layout <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  rstudio <span class="op">=</span> <span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/rstudioapi/man/isAvailable.html" class="external-link">isAvailable</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  open <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/interactive.html" class="external-link">interactive</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">create_workshop_dir</span><span class="op">(</span></span>
+<span>  <span class="va">code</span>,</span>
+<span>  name <span class="op">=</span> <span class="va">code</span>,</span>
+<span>  full_name <span class="op">=</span> <span class="va">name</span>,</span>
+<span>  destdir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.workshop.dir"</span><span class="op">)</span>,</span>
+<span>  rstudio <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  open <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">create_teaching_dir</span><span class="op">(</span></span>
+<span>  <span class="va">code</span>,</span>
+<span>  name <span class="op">=</span> <span class="va">code</span>,</span>
+<span>  full_name <span class="op">=</span> <span class="va">name</span>,</span>
+<span>  destdir <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.teaching.dir"</span><span class="op">)</span>,</span>
+<span>  rstudio <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  open <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>code</dt>
 <dd><p>the code of the course</p></dd>
+
+
 <dt>name</dt>
 <dd><p>the short name of the course. There should be no spaces.</p></dd>
+
+
 <dt>proj_name</dt>
 <dd><p>the project name for Rpro</p></dd>
+
+
 <dt>full_name</dt>
 <dd><p>the full name of the course e.g. Wild-Caught Data</p></dd>
+
+
 <dt>destdir</dt>
 <dd><p>the directory path</p></dd>
+
+
 <dt>layout</dt>
 <dd><p>the yaml file name (TODO: or a list)</p></dd>
+
+
 <dt>rstudio</dt>
 <dd><p>launch in rstudio?</p></dd>
+
+
 <dt>open</dt>
 <dd><p>open after creating teaching directory?</p></dd>
+
 </dl></div>
     <div id="functions">
     <h2>Functions</h2>
@@ -132,7 +147,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer></div>

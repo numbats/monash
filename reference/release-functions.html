@@ -63,58 +63,69 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">release_lecture</span><span class="op">(</span>
-  <span class="va">week</span>,
-  dir <span class="op">=</span> <span class="st">"tutorials"</span>,
-  output_dir <span class="op">=</span> <span class="st">"release"</span>,
-  ignore <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.lecture.ignore"</span><span class="op">)</span>,
-  interactive <span class="op">=</span> <span class="fu">rlang</span><span class="fu">::</span><span class="fu"><a href="https://rlang.r-lib.org/reference/is_interactive.html" class="external-link">is_interactive</a></span><span class="op">(</span><span class="op">)</span>,
-  overwrite <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span>
-
-<span class="fu">release_tutorial</span><span class="op">(</span>
-  <span class="va">week</span>,
-  dir <span class="op">=</span> <span class="st">"tutorials"</span>,
-  output_dir <span class="op">=</span> <span class="st">"release"</span>,
-  ignore <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.tutorial.ignore"</span><span class="op">)</span>,
-  interactive <span class="op">=</span> <span class="fu">rlang</span><span class="fu">::</span><span class="fu"><a href="https://rlang.r-lib.org/reference/is_interactive.html" class="external-link">is_interactive</a></span><span class="op">(</span><span class="op">)</span>,
-  overwrite <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span>
-
-<span class="fu">release_tutorial_solution</span><span class="op">(</span>
-  <span class="va">week</span>,
-  dir <span class="op">=</span> <span class="st">"tutorials"</span>,
-  output_dir <span class="op">=</span> <span class="st">"release"</span>,
-  ignore <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.tutorial.ignore"</span><span class="op">)</span>,
-  interactive <span class="op">=</span> <span class="fu">rlang</span><span class="fu">::</span><span class="fu"><a href="https://rlang.r-lib.org/reference/is_interactive.html" class="external-link">is_interactive</a></span><span class="op">(</span><span class="op">)</span>,
-  overwrite <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">release_lecture</span><span class="op">(</span></span>
+<span>  <span class="va">week</span>,</span>
+<span>  dir <span class="op">=</span> <span class="st">"tutorials"</span>,</span>
+<span>  output_dir <span class="op">=</span> <span class="st">"release"</span>,</span>
+<span>  ignore <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.lecture.ignore"</span><span class="op">)</span>,</span>
+<span>  interactive <span class="op">=</span> <span class="fu">rlang</span><span class="fu">::</span><span class="fu"><a href="https://rlang.r-lib.org/reference/is_interactive.html" class="external-link">is_interactive</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  overwrite <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">release_tutorial</span><span class="op">(</span></span>
+<span>  <span class="va">week</span>,</span>
+<span>  dir <span class="op">=</span> <span class="st">"tutorials"</span>,</span>
+<span>  output_dir <span class="op">=</span> <span class="st">"release"</span>,</span>
+<span>  ignore <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.tutorial.ignore"</span><span class="op">)</span>,</span>
+<span>  interactive <span class="op">=</span> <span class="fu">rlang</span><span class="fu">::</span><span class="fu"><a href="https://rlang.r-lib.org/reference/is_interactive.html" class="external-link">is_interactive</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  overwrite <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">release_tutorial_solution</span><span class="op">(</span></span>
+<span>  <span class="va">week</span>,</span>
+<span>  dir <span class="op">=</span> <span class="st">"tutorials"</span>,</span>
+<span>  output_dir <span class="op">=</span> <span class="st">"release"</span>,</span>
+<span>  ignore <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"monash.tutorial.ignore"</span><span class="op">)</span>,</span>
+<span>  interactive <span class="op">=</span> <span class="fu">rlang</span><span class="fu">::</span><span class="fu"><a href="https://rlang.r-lib.org/reference/is_interactive.html" class="external-link">is_interactive</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  overwrite <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>week</dt>
 <dd><p>the week number</p></dd>
+
+
 <dt>dir</dt>
 <dd><p>the subdirectory where the file is</p></dd>
+
+
 <dt>output_dir</dt>
 <dd><p>the directory where the release folder is</p></dd>
+
+
 <dt>ignore</dt>
 <dd><p>the file paths to ignore</p></dd>
+
+
 <dt>interactive</dt>
 <dd><p>not used yet</p></dd>
+
+
 <dt>overwrite</dt>
 <dd><p>should the files be overwritten?</p></dd>
+
 </dl></div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in"><span class="fu">release_lecture</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span> <span class="co"># to release week 9 lecture</span></span>
-<span class="r-in"><span class="fu">release_tutorial</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span> <span class="co"># to release week 9 tutorial</span></span>
-<span class="r-in"><span class="fu">release_tutorial_solution</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span> <span class="co"># to release week 9 tutorial solution</span></span>
-<span class="r-in"><span class="op">}</span></span>
-<span class="r-in"></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="fu">release_lecture</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span> <span class="co"># to release week 9 lecture</span></span></span>
+<span class="r-in"><span><span class="fu">release_tutorial</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span> <span class="co"># to release week 9 tutorial</span></span></span>
+<span class="r-in"><span><span class="fu">release_tutorial_solution</span><span class="op">(</span><span class="fl">9</span><span class="op">)</span> <span class="co"># to release week 9 tutorial solution</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -129,7 +140,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer></div>

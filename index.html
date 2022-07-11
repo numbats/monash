@@ -86,9 +86,7 @@
 <div class="section level1">
 <div class="page-header"><h1 id="monash">monash<a class="anchor" aria-label="anchor" href="#monash"></a>
 </h1></div>
-<!-- badges: start -->
-<!-- badges: end -->
-<p>The <code>monash</code> R-package is a utility package with consolidated tools and templates for staffs at Monash University. The package contains three primary themes:</p>
+<!-- badges: start --><!-- badges: end --><p>The <code>monash</code> R-package is a utility package with consolidated tools and templates for staffs at Monash University. The package contains three primary themes:</p>
 <ul>
 <li>
 <strong>workflow</strong>: automating repetitive tasks, particularly teaching related activities;</li>
@@ -102,22 +100,22 @@
 </h2>
 <p>You can install <code>monash</code> R-package as below:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"numbats/monash"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"numbats/monash"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="get-monash-logo">Get Monash logo<a class="anchor" aria-label="anchor" href="#get-monash-logo"></a>
 </h2>
 <p>You can get a copy of the logo into the directory you wish with below.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># default logo</span>
-<span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span><span class="op">)</span>
-<span class="co">#&gt; ✔ The 'monash-stacked-blue-rgb.png' is now in 'man/figures/'</span>
-<span class="co">#&gt; man/figures/monash-stacked-blue-rgb.png</span>
-<span class="co"># black and white &amp; one-line version of the logo</span>
-<span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span>, color <span class="op">=</span> <span class="st">"black"</span>, stack <span class="op">=</span> <span class="cn">FALSE</span>, filename <span class="op">=</span> <span class="st">"monash-logo-black.png"</span><span class="op">)</span>
-<span class="co">#&gt; ✔ The 'monash-logo-black.png' is now in 'man/figures/'</span>
-<span class="co">#&gt; man/figures/monash-logo-black.png</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># default logo</span></span>
+<span><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; ✔ The 'monash-stacked-blue-rgb.png' is now in 'man/figures/'</span></span>
+<span><span class="co">#&gt; man/figures/monash-stacked-blue-rgb.png</span></span>
+<span><span class="co"># black and white &amp; one-line version of the logo</span></span>
+<span><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span>, color <span class="op">=</span> <span class="st">"black"</span>, stack <span class="op">=</span> <span class="cn">FALSE</span>, filename <span class="op">=</span> <span class="st">"monash-logo-black.png"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; ✔ The 'monash-logo-black.png' is now in 'man/figures/'</span></span>
+<span><span class="co">#&gt; man/figures/monash-logo-black.png</span></span></code></pre></div>
 <p>And then you can reference the logo file that you copied.</p>
 <p><img src="reference/figures/monash-stacked-blue-rgb.png"><img src="reference/figures/monash-logo-black.png"></p>
 </div>
@@ -126,7 +124,7 @@
 </h2>
 <p>These are handy commands to quickly see Monash brand colors and be able to copy-and-paste the hex color codes.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/monash-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/monash-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%"></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#&gt;      blue     black     white    gray80    gray50    gray10      blue    purple </span></span>
 <span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt; "#006DAE" "#000000" "#FFFFFF" "#5A5A5A" "#969696" "#E6E6E6" "#027EB6" "#746FB2" </span></span>
@@ -219,7 +217,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
 </div>
 
       </footer>
