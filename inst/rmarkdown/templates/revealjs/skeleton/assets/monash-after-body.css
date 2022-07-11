@@ -1,3 +1,14 @@
+/*** font-awesome list fix ***/
+/*** for some reason quarto.css overwrites it to list-style-type = disc ***/
+
+.fa-ul {
+    list-style-type: none!important;
+    margin-left: var(--fa-li-margin,2.5em);
+    padding-left: 0;
+}
+
+/******/
+
 div.callout-note {
   border-left-color: #006DAE!important;
 }
