@@ -37,9 +37,9 @@
 
 %% Page dimensions
 \ifsingleside@%
-  \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=3.5cm]{geometry}
+  \usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \else%
-  \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=3.5cm,twoside]{geometry}
+  \usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,twoside]{geometry}
 \fi%
 
 %% CAPTIONS
@@ -201,7 +201,7 @@
 
         \vfill\vfill
 
-        \includegraphics[width=3cm]{figures/crest}
+        \includegraphics[width=2.5cm]{figures/crest}
 
         Department of Econometrics and Business Statistics\\
         Monash University\\Australia

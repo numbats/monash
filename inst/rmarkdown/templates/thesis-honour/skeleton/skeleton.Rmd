@@ -1,8 +1,11 @@
+This file is just a dummy file required for the Rmd template. You can safely delete this file.
 
+To get started, knit `index.Rmd`.
 
-This file is just a dummy file 
-required for the Rmd template. You can safely delete this file. 
+The thesis contents are contained in the other Rmd files: `01-chap1.Rmd `, `02-chap2.Rmd`, `A-appA.Rmd`, etc. Add new Rmd files as required. You'll need to edit the `_bookdown.yml` file to set the order in which you'd like them to appear.
 
-To get started, have a look at other Rmd files.
+If you have specific LaTeX packages to add, put them in `monashthesis.tex`.
 
-If you named your file, `index.Rmd`, `01-chap1.Rmd `, `02-chap2.Rmd` or `A-appA.Rmd`, it may have overwritten the other necessary files so it will be better to redo it and rename your file to something else. 
+You will need to ensure you have installed the `knitr` and `bookdown` packages for R.
+
+You will also need LaTeX installed on your computer.

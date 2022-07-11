@@ -1,18 +1,22 @@
 #' Release materials
 #'
+#' @name release-functions
 #' @param week the week number
 #' @param dir the subdirectory where the file is
 #' @param output_dir the directory where the release folder is
 #' @param ignore the file paths to ignore
 #' @param interactive not used yet
 #' @param overwrite should the files be overwritten?
+#' @examples
+#' \dontrun{
+#' release_lecture(9) # to release week 9 lecture
+#' release_tutorial(9) # to release week 9 tutorial
+#' release_tutorial_solution(9) # to release week 9 tutorial solution
+#' }
 #'
-#'
-#' @name release-functions
 NULL
 
 #' @rdname release-functions
-#' @usage release_lecture(9) # to release week 9 lecture
 #' @export
 release_lecture <- function(week,
                              dir = "tutorials",
@@ -22,12 +26,10 @@ release_lecture <- function(week,
                              overwrite = TRUE) {
   release_base("^lecture-%.2d(\\.Rmd|\\.html|\\.pdf)",
                "^(?!lecture-[0-9][0-9]).*",
-               week, dir, output_dir, ignore, interactive, ovewrite)
+               week, dir, output_dir, ignore, interactive, overwrite)
 }
 
-
 #' @rdname release-functions
-#' @usage release_tutorial(9) # to release week 9 tutorial
 #' @export
 release_tutorial <- function(week,
                               dir = "tutorials",
@@ -37,27 +39,25 @@ release_tutorial <- function(week,
                               overwrite = TRUE) {
   release_base("^tutorial-%.2d(\\.Rmd|\\.html|\\.pdf)",
                "^(?!tutorial-[0-9][0-9]).*",
-               week, dir, output_dir, ignore, interactive, ovewrite)
+               week, dir, output_dir, ignore, interactive, overwrite)
 }
 
 #' @rdname release-functions
-#' @usage release_tutorial_solution(9) # to release week 9 tutorial solution
 #' @export
 release_tutorial_solution <- function(week,
                              dir = "tutorials",
                              output_dir = "release",
                              ignore = getOption("monash.tutorial.ignore"),
                              interactive = rlang::is_interactive(),
-                             overwrite = TRUE,
-                             solution = FALSE) {
+                             overwrite = TRUE) {
   release_base("^tutorial-%.2dsol(\\.Rmd|\\.html|\\.pdf)",
                "^(?!tutorial-[0-9][0-9]).*",
-               week, dir, output_dir, ignore, interactive, ovewrite)
+               week, dir, output_dir, ignore, interactive, overwrite)
 }
 
 
 release_base <- function(pos_pattern, neg_pattern, week, dir, output_dir, ignore = NULL,
-                         interactive = FALSE, ovewrite = FALSE) {
+                         interactive = FALSE, overwrite = FALSE) {
   if(missing(week)) abort("The week number is missing.")
   changes <- release_changes(dir)
   tut_changes <- changes[grep(pos_pattern, changes, perl = TRUE)]

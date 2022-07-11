@@ -37,9 +37,9 @@
 
 %% Page dimensions
 \ifsingleside@%
-  \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=3.5cm]{geometry}
+  \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \else%
-  \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=3.5cm,twoside]{geometry}
+  \usepackage[a4paper,left=3.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,twoside]{geometry}
 \fi%
 
 %% CAPTIONS
@@ -190,7 +190,7 @@
         \@author\\
         \@degrees
     \vfill
-        A thesis submitted for the degree of \degreetitle { } at\\
+        A thesis submitted for the degree of \degreetitle\ at\\
         Monash University in \@submitdate\\
         Department of Econometrics and Business Statistics
     \end{center}

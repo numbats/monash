@@ -13,6 +13,8 @@ zoom_process(
 )
 }
 \arguments{
+\item{.data}{Data frame}
+
 \item{start, end}{A date time of when the zoom meeting started or ended.
 If NA, this is ignored. If the date time is supplied, then the time is censored.}
 

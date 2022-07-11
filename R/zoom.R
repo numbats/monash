@@ -1,10 +1,10 @@
-
 #' Link attendance record to google sheet
 #'
 #' @param .data The summary data frame with email, total and letter grade.
 #' @param .sheet The link to the googlesheet
 #' @param sheetname The name of the sheet
 #' @param week The week number
+#' @param upload Should the attendance be uploaded to a Google sheet?
 #'
 #'
 #' @export
@@ -29,7 +29,7 @@ zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
       range = paste0(LETTERS[2 + week], c(4,NROW(df)+3), collapse = ":"),
       col_names = FALSE
     )
-    cli::cli_alert_success("Attendance successfully uploaded 🎉")
+    cli::cli_alert_success("Attendance successfully uploaded \U1F389")
   }
   out
 }
@@ -70,6 +70,7 @@ zoom_read <- function(file, info = TRUE, date_format = "%m/%d/%Y %I:%M:%S %p") {
 
 #' Process the data frame from zoom meeting to total duration of attendance
 #'
+#' @param .data Data frame
 #' @param start,end A date time of when the zoom meeting started or ended.
 #' If NA, this is ignored. If the date time is supplied, then the time is censored.
 #' @param length The total length of the session in minutes.
@@ -91,7 +92,7 @@ zoom_process <- function(.data, start = NA, end = NA, length = 120,
       filter(start <= end)
   }
   out <- .data %>%
-    mutate(duration = leave - join) %>%
+    mutate(duration = lubridate::period_to_seconds(as.period(leave - join))) %>%
     group_by(email) %>%
     summarise(total = sum(as.numeric(duration)))
   if(length(accept)) {
@@ -102,3 +103,6 @@ zoom_process <- function(.data, start = NA, end = NA, length = 120,
   }
   out
 }
+
+# Declare global variables to avoid check errors due to NSE
+utils::globalVariables(c("email","join","leave","old"))

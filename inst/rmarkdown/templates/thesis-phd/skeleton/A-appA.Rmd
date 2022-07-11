@@ -8,4 +8,4 @@ knit: "bookdown::render_book"
 
 You might put some computer output here, or maybe additional tables.
 
-Note that line 5 must appear before your first appendix. But other appendices can just start like any other chapter.
+Note that `\appendix` must appear before your first appendix heading. But other appendices can just start like any other chapter.
