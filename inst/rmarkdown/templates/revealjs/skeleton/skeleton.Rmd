@@ -231,22 +231,22 @@ Only a few features are shown in the next couple of slides.
 
 ## Font sizes and Text decorations
 
-[`.f-headline[]`]{.f-headline} or [`.f-6[]`]{.f-6}
+[`.f-headline`]{.f-headline} or [`.f-6`]{.f-6}
 
-[`.f-subheadline[]`]{.f-subheadline} or [`.f-5[]`]{.f-5}
+[`.f-subheadline`]{.f-subheadline} or [`.f-5`]{.f-5}
 
-[`.f1[]`]{.f1}
-[`.f2[]`]{.f2}
-[`.f3[]`]{.f3}
-[`.f4[]`]{.f4}
-[`.f5[]`]{.f5}
-[`.f6[]`]{.f6}
-[`.f7[]`]{.f7}
+[`.f1`]{.f1}
+[`.f2`]{.f2}
+[`.f3`]{.f3}
+[`.f4`]{.f4}
+[`.f5`]{.f5}
+[`.f6`]{.f6}
+[`.f7`]{.f7}
 
 
-[`.underline[]`]{.underline}
+[`.underline`]{.underline}
 
-[`.strike[]`]{.strike}
+[`.strike`]{.strike}
 
 
 ## Scroll boxes
