@@ -71,16 +71,6 @@ Lecturer: *`r rmarkdown::metadata$author`*
 
 :::
 
-## Change file extension
-
-:::{.callout-important .w-70}
-
-Because there are yet no Quarto templates option (as far as I know), the skeleton file is disguised as a Rmd template for now. 
-
-Please change the extension from `.Rmd` to `.qmd` when using this template.
-
-:::
-
 
 ## Quarto Revealjs Basics 
 
