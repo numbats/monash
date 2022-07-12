@@ -44,10 +44,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-
-## [`r rmarkdown::metadata$pagetitle`]{.monash-blue} {#title-slide}
-
-<br>
+## <br>[`r rmarkdown::metadata$pagetitle`]{.monash-blue} {background-image="images/bg-01.png"}
 
 ### `r rmarkdown::metadata$subtitle`
 
@@ -143,19 +140,19 @@ For basics go to [https://quarto.org/docs/presentations/revealjs/](https://quart
 :::{.callout-note}
 `.callout-note`
 
-Assignment 1 is **due 18th May**
+Note: next week is midsem break.
 :::
 
 :::{.callout-important}
 `.callout-important`
 
-Your turn!
+Assignment 1 is **due 18th May**
 :::
 
 :::{.callout-caution}
 `.callout-caution`
 
-Your turn!
+Don't forget to click the submit button.
 :::
 
 :::
@@ -171,7 +168,7 @@ Go [here](https://quarto.org/docs/authoring/callouts.html) to find more about ca
 :::{.callout-warning}
 `.callout-warning`
 
-Your turn!
+Remember the data context.
 :::
 
 :::{.callout-tip appearance="simple"}
