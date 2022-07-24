@@ -127,3 +127,7 @@ code span.dv {
 code span.kw {
   color: #007BA5;
 }
+
+pre > code.sourceCode > span {
+    color: #F2F3F5;
+}
