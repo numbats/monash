@@ -542,9 +542,9 @@ input[type="url"],
 
 
 
-.fl { float: left;  _display: inline; }
-.fr { float: right; _display: inline; }
-.fn { float: none; }
+.ftl { float: left;  _display: inline; }
+.ftr { float: right; _display: inline; }
+.ftn { float: none; }
 
 
 /*
