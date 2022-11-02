@@ -191,8 +191,14 @@ $endif$
 $fromtitle$\\
 Department of Econometrics \& Business Statistics\\
 Monash University, Victoria 3800, Australia.\\[0.15cm]
-\faicon{envelope} $fromemail$\quad\faicon{phone} $fromphone$\quad
-\faicon{home} $fromWWW$\\[0.1cm]
+$if(fromemail)$\faicon{envelope} $fromemail$\quad $endif$
+$if(fromphone)$\faicon{phone} $fromphone$ $endif$
+$if(fromWWW)$
+\newlength{\wwwl}%
+\settowidth{\wwwl}{$fromWWW$}%
+\ifdim \the\wwwl>100pt \\[0.1cm] \else\quad\fi%
+\faicon{home} $fromWWW$
+$endif$\\[0.1cm]
 ABN: 12 377 614 012\quad CRICOS Provider Number: 00008C
 \end{tabular}}
 \end{textblock}%
