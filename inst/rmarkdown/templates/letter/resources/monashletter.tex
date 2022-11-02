@@ -177,6 +177,16 @@ $endif$
 \setlength{\TPVertModule}{1cm}
 
 \makeatletter
+\def\strlen#1{\strlenimpl0#1\relax}
+\def\strlenimpl#1#2{%
+\ifx\relax#2 \the\numexpr#1\relax
+\else
+\expandafter\strlenimpl\expandafter{%
+  \the\numexpr(#1+\ifnum\expandafter`\string#2<"80 1\else \ifnum\expandafter`\string#2>"BF 1 \else 0 \fi\fi
+  \expandafter)\expandafter\relax\expandafter}%
+\fi}
+
+\makeatletter
 \def\ps@monash{%
 \begin{textblock}{4}(2,1)
 \includegraphics[height=1.5cm]{monash2}
@@ -191,8 +201,9 @@ $endif$
 $fromtitle$\\
 Department of Econometrics \& Business Statistics\\
 Monash University, Victoria 3800, Australia.\\[0.15cm]
-\faicon{envelope} $fromemail$\quad\faicon{phone} $fromphone$\quad
-\faicon{home} $fromWWW$\\[0.1cm]
+$if(fromemail)$\faicon{envelope} $fromemail$\quad $endif$
+$if(fromphone)$\faicon{phone} $fromphone$\quad $endif$
+$if(fromWWW)$ \ifnum\strlen{$fromWWW$}>20 \\[0.1cm]\fi \faicon{home} $fromWWW$ $endif$\\[0.1cm]
 ABN: 12 377 614 012\quad CRICOS Provider Number: 00008C
 \end{tabular}}
 \end{textblock}%
