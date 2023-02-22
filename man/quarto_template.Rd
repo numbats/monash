@@ -20,6 +20,20 @@ quarto_template_add(
   type = c("report", "workingpaper", "thesis", "memo", "letter")
 )
 }
+\arguments{
+\item{type}{One of either "report", "workingpaper", "thesis", "memo", or
+"letter".}
+
+\item{dir}{The name of the directory to put the template in. The directory
+should not exist.}
+}
 \description{
 This function lists the Monash Quarto templates available.
+}
+\examples{
+\dontrun{
+quarto_template_use("report", dir = "myreport")
+quarto_template_install("workingpaper")
+quarto_template_add("thesis")
+}
 }

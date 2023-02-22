@@ -68,7 +68,18 @@ base_quarto <- "numbats/monash-quarto-"
 #'
 #' This function lists the Monash Quarto templates available.
 #'
+#' @param type One of either "report", "workingpaper", "thesis", "memo", or
+#'  "letter".
+#' @param dir The name of the directory to put the template in. The directory
+#'  should not exist.
+#'
 #' @name quarto_template
+#' @examples
+#' \dontrun{
+#' quarto_template_use("report", dir = "myreport")
+#' quarto_template_install("workingpaper")
+#' quarto_template_add("thesis")
+#' }
 #' @export
 quarto_template_use <- function(type = c("report",
                                          "workingpaper",
