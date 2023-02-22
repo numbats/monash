@@ -59,3 +59,64 @@ memo <- function(...) {
                           template = template
   )
 }
+
+# assumes that the template repos all are in the `numbats` org
+# with prefix `monash-quarto-`
+base_quarto <- "numbats/monash-quarto-"
+
+#' List of Quarto templates available
+#'
+#' This function lists the Monash Quarto templates available.
+#'
+#' @name quarto_template
+#' @export
+quarto_template_use <- function(type = c("report",
+                                         "workingpaper",
+                                         "thesis",
+                                         "memo",
+                                         "letter"),
+                                dir = type) {
+
+  type <- match.arg(type)
+  dir <- dir[1]
+  wd_current <- getwd()
+  wd_new <- dir
+  if(dir.exists(wd_new)) stop(paste0("The directory ", wd_new, " already exists. Please delete this first to proceed."))
+  dir.create(wd_new)
+  setwd(wd_new)
+  system(paste0("quarto use template ", base_quarto, type, " --no-prompt"))
+  # back to original working directory
+  setwd(wd_current)
+  browser()
+  fn <- basename(dir)
+  rstudioapi::navigateToFile(paste0(dir, "/", fn, ".qmd"))
+}
+
+
+#' @rdname quarto_template
+#' @export
+quarto_template_install <- function(type = c("report",
+                                             "workingpaper",
+                                             "thesis",
+                                             "memo",
+                                             "letter")) {
+  type <- match.arg(type)
+
+  system(paste0("quarto install extension ", base_quarto, type, " --no-prompt"))
+  ui_done("Template installed.")
+}
+
+
+#' @rdname quarto_template
+#' @export
+quarto_template_add <- function(type = c("report",
+                                         "workingpaper",
+                                         "thesis",
+                                         "memo",
+                                         "letter")) {
+
+  type <- match.arg(type)
+
+  system(paste0("quarto add ", base_quarto, type, " --no-prompt"))
+  ui_done("Template added.")
+}
