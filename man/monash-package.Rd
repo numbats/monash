@@ -6,7 +6,7 @@
 \alias{monash-package}
 \title{monash: Consolidated tools and templates for staff at Monash University}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 Rmarkdown templates and other tools for use at Monash University, Department of Econometrics & Business Statistics.
 }
