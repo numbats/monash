@@ -77,7 +77,28 @@
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
+    <div id="arguments">
+    <h2>Arguments</h2>
+    <dl><dt>type</dt>
+<dd><p>One of either "report", "workingpaper", "thesis", "memo", or
+"letter".</p></dd>
 
+
+<dt>dir</dt>
+<dd><p>The name of the directory to put the template in. The directory
+should not exist.</p></dd>
+
+</dl></div>
+
+    <div id="ref-examples">
+    <h2>Examples</h2>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span><span class="fu">quarto_template_use</span><span class="op">(</span><span class="st">"report"</span>, dir <span class="op">=</span> <span class="st">"myreport"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">quarto_template_install</span><span class="op">(</span><span class="st">"workingpaper"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">quarto_template_add</span><span class="op">(</span><span class="st">"thesis"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
+</code></pre></div>
+    </div>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top"><h2 data-toc-skip>Contents</h2>
