@@ -98,8 +98,8 @@ quarto_template_use <- function(type = c("report",
   system(paste0("quarto use template ", base_quarto, type, " --no-prompt"))
   # back to original working directory
   setwd(wd_current)
-  browser()
   fn <- basename(dir)
+  # TODO: add base option
   rstudioapi::navigateToFile(paste0(dir, "/", fn, ".qmd"))
 }
 
