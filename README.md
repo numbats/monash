@@ -26,6 +26,15 @@ You can install `monash` R-package as below:
 remotes::install_github("numbats/monash")
 ```
 
+## Create a quarto article
+
+``` r
+library(monash)
+quarto_template_use("report", dir = "myreport")
+quarto_template_install("workingpaper")
+quarto_template_add("thesis")
+```
+
 ## Get Monash logo
 
 You can get a copy of the logo into the directory you wish with below.
