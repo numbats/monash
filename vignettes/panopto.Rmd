@@ -1,0 +1,107 @@
+---
+title: "Panopto Guide "
+output:
+  rmarkdown::html_vignette:
+vignette: >
+  %\VignetteIndexEntry{panopto}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+   collapse = TRUE,
+   comment = "#>"
+)
+options(rmarkdown.html_vignette.check_title = FALSE) 
+```
+
+
+Panopto is one of the learning technologies Monash University uses for video management, creation and editing. This guide serves as a single destination to all web links to user guides on Panopto. 
+
+## Panopto Screen Orientation Guides
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/panopto-screen-orientation-guides 
+
+
+## Add Panopto Block Guide
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/add-panopto-block 
+
+
+## Recording, Inserting & Uploading Video Content in Moodle with Panopto
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/recording,-inserting-and-uploading-video-content-in-moodle
+
+### Setting up assignment feedback
+
+
+https://monash.au.panopto.com/Panopto/Pages/Viewer.aspx?id=9e08b893-10c1-4e9b-b825-a9970045cefe 
+
+### Setting up assignments 
+
+https://monash.au.panopto.com/Panopto/Pages/Viewer.aspx?id=620ff299-3adf-4453-bfe7-ab8e00015634 
+
+## Basic Editing with Panopto 
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/basic-editing-with-panopto
+
+## Working with sessions
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/sessions-using-panopto
+
+
+## Working with Panopto folders
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/working-with-folders 
+
+
+
+## Viewing Statistics and Analytics for Panopto videos
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/viewing-statistics-and-analytics
+
+
+## Adding PowerPoint slides to a Panopto video
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/adding-powerpoint-slides
+
+## Upload a PDF into a Panopto video
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/upload-a-pdf 
+
+## Inserting a quiz into a Panopto video 
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/creating-quizzes
+
+## Using captions
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/using-captions
+
+## Deleting content streams in Panopto videos
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/deleting-streams 
+
+
+## Using Notes in Panopto 
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/using-notes 
+
+## Podcasts (Panopto)
+
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/using-podcasts
+
+## Setting up Panopto assignments
+
+https://www.monash.edu/learning-teaching/teaching-resources/search/userguides/panopto-assignments
