@@ -62,7 +62,7 @@ memo <- function(...) {
 
 # assumes that the template repos all are in the `numbats` org
 # with prefix `monash-quarto-`
-base_quarto <- "numbats/monash-quarto-"
+base_quarto <- "quarto-monash/"
 
 #' List of Quarto templates available
 #'
