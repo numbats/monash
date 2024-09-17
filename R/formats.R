@@ -85,7 +85,8 @@ quarto_template_use <- function(type = c("report",
                                          "workingpaper",
                                          "thesis",
                                          "memo",
-                                         "letter"),
+                                         "letter",
+                                        "exam"),
                                 dir = type) {
 
   type <- match.arg(type)
@@ -110,7 +111,8 @@ quarto_template_install <- function(type = c("report",
                                              "workingpaper",
                                              "thesis",
                                              "memo",
-                                             "letter")) {
+                                             "letter",
+                                            "exam")) {
   type <- match.arg(type)
 
   system(paste0("quarto install extension ", base_quarto, type, " --no-prompt"))
@@ -124,7 +126,8 @@ quarto_template_add <- function(type = c("report",
                                          "workingpaper",
                                          "thesis",
                                          "memo",
-                                         "letter")) {
+                                         "letter",
+                                        "exam")) {
 
   type <- match.arg(type)
 

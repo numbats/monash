@@ -8,16 +8,16 @@
 \title{List of Quarto templates available}
 \usage{
 quarto_template_use(
-  type = c("report", "workingpaper", "thesis", "memo", "letter"),
+  type = c("report", "workingpaper", "thesis", "memo", "letter", "exam"),
   dir = type
 )
 
 quarto_template_install(
-  type = c("report", "workingpaper", "thesis", "memo", "letter")
+  type = c("report", "workingpaper", "thesis", "memo", "letter", "exam")
 )
 
 quarto_template_add(
-  type = c("report", "workingpaper", "thesis", "memo", "letter")
+  type = c("report", "workingpaper", "thesis", "memo", "letter", "exam")
 )
 }
 \arguments{
