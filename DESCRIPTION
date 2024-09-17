@@ -10,7 +10,8 @@ Authors@R:
       person(given = "Rob", 
              family = "Hyndman", 
              email = "Rob.Hyndman@monash.edu", 
-             role = c("aut", "cre")),
+             role = c("aut", "cre"),
+             comment = c(ORCID = "0000-0002-2140-5352")),
       person(given = "Mitchell",
              family = "O'Hara-Wild",
              role = c("ctb"), 
@@ -36,14 +37,11 @@ Imports:
     purrr,
     readr,
     rlang,
-    rprojroot,
     rstudioapi,
     scales,
     stringr,
     usethis,
-    vctrs,
-    whisker,
-    yaml
+    vctrs
 Suggests: 
     binb,
     knitr,
