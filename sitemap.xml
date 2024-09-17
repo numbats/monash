@@ -1,63 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/articles/file-structure.html</loc>
-  </url>
-  <url>
-    <loc>/articles/flux.html</loc>
-  </url>
-  <url>
-    <loc>/articles/github-classroom.html</loc>
-  </url>
-  <url>
-    <loc>/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/letter.html</loc>
-  </url>
-  <url>
-    <loc>/reference/logo_get.html</loc>
-  </url>
-  <url>
-    <loc>/reference/monash-color.html</loc>
-  </url>
-  <url>
-    <loc>/reference/monash-package.html</loc>
-  </url>
-  <url>
-    <loc>/reference/quarto_template.html</loc>
-  </url>
-  <url>
-    <loc>/reference/release-functions.html</loc>
-  </url>
-  <url>
-    <loc>/reference/ui-questions.html</loc>
-  </url>
-  <url>
-    <loc>/reference/ui.html</loc>
-  </url>
-  <url>
-    <loc>/reference/zoom_attendance.html</loc>
-  </url>
-  <url>
-    <loc>/reference/zoom_process.html</loc>
-  </url>
-  <url>
-    <loc>/reference/zoom_read.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/articles/file-structure.html</loc></url>
+<url><loc>/articles/flux.html</loc></url>
+<url><loc>/articles/github-classroom.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/letter.html</loc></url>
+<url><loc>/reference/logo_get.html</loc></url>
+<url><loc>/reference/monash-color.html</loc></url>
+<url><loc>/reference/monash-package.html</loc></url>
+<url><loc>/reference/quarto_template.html</loc></url>
+<url><loc>/reference/release-functions.html</loc></url>
+<url><loc>/reference/ui-questions.html</loc></url>
+<url><loc>/reference/ui.html</loc></url>
+<url><loc>/reference/zoom_attendance.html</loc></url>
+<url><loc>/reference/zoom_process.html</loc></url>
+<url><loc>/reference/zoom_read.html</loc></url>
 </urlset>
+

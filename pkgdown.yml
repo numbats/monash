@@ -1,9 +1,8 @@
-pandoc: 2.7.3
-pkgdown: 2.0.7
+pandoc: 3.1.11
+pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
   file-structure: file-structure.html
   flux: flux.html
   github-classroom: github-classroom.html
-last_built: 2023-04-09T03:38Z
-
+last_built: 2024-09-17T01:14Z

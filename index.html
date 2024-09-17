@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -26,7 +26,7 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -52,7 +52,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -79,14 +79,16 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="contents col-md-9">
 <div class="section level1">
 <div class="page-header"><h1 id="monash">monash<a class="anchor" aria-label="anchor" href="#monash"></a>
 </h1></div>
-<!-- badges: start --><!-- badges: end --><p>The <code>monash</code> R-package is a utility package with consolidated tools and templates for staffs at Monash University. The package contains three primary themes:</p>
+<!-- badges: start -->
+<!-- badges: end -->
+<p>The <code>monash</code> R-package is a utility package with consolidated tools and templates for staffs at Monash University. The package contains three primary themes:</p>
 <ul>
 <li>
 <strong>workflow</strong>: automating repetitive tasks, particularly teaching related activities;</li>
@@ -101,13 +103,22 @@
 <p>You can install <code>monash</code> R-package as below:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"numbats/monash"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"numbats/monash"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="create-a-quarto-article">Create a quarto article<a class="anchor" aria-label="anchor" href="#create-a-quarto-article"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">monash</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/quarto_template.html">quarto_template_use</a></span><span class="op">(</span><span class="st">"report"</span>, dir <span class="op">=</span> <span class="st">"myreport"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/quarto_template.html">quarto_template_install</a></span><span class="op">(</span><span class="st">"workingpaper"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/quarto_template.html">quarto_template_add</a></span><span class="op">(</span><span class="st">"thesis"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="get-monash-logo">Get Monash logo<a class="anchor" aria-label="anchor" href="#get-monash-logo"></a>
 </h2>
 <p>You can get a copy of the logo into the directory you wish with below.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># default logo</span></span>
 <span><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; ✔ The 'monash-stacked-blue-rgb.png' is now in 'man/figures/'</span></span>
@@ -123,23 +134,23 @@
 <h2 id="get-monash-brand-colors">Get Monash brand colors<a class="anchor" aria-label="anchor" href="#get-monash-brand-colors"></a>
 </h2>
 <p>These are handy commands to quickly see Monash brand colors and be able to copy-and-paste the hex color codes.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/monash-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%"></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#&gt;      blue     black     white    gray80    gray50    gray10      blue    purple </span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt; "#006DAE" "#000000" "#FFFFFF" "#5A5A5A" "#969696" "#E6E6E6" "#027EB6" "#746FB2" </span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt;   fuchsia      ruby      pink       red    orange     umber     olive     green </span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt; "#9651A0" "#C8008F" "#ee64a4" "#EE0220" "#D93F00" "#795549" "#6F7C4D" "#008A25"</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co">#&gt;      blue     black     white    gray80    gray50    gray10      blue    purple </span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="co">#&gt; "#006DAE" "#000000" "#FFFFFF" "#5A5A5A" "#969696" "#E6E6E6" "#027EB6" "#746FB2" </span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="co">#&gt;   fuchsia      ruby      pink       red    orange     umber     olive     green </span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co">#&gt; "#9651A0" "#C8008F" "#ee64a4" "#EE0220" "#D93F00" "#795549" "#6F7C4D" "#008A25"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="settings">Settings<a class="anchor" aria-label="anchor" href="#settings"></a>
 </h2>
 <p>(WIP) The monash package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">options</span>(<span class="dt">monash.full_name =</span> <span class="st">"Emi Tanaka"</span>,</span>
-<span id="cb5-2"><a href="#cb5-2"></a>        <span class="dt">monash.email =</span> <span class="st">"emi.tanaka@monash.edu"</span>,</span>
-<span id="cb5-3"><a href="#cb5-3"></a>        <span class="dt">monash.orgunit =</span> <span class="st">"Department of Econometrics and Business Statistics"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4"></a>        <span class="dt">monash.teaching_dir =</span> <span class="st">"~/teaching/monash/"</span>,</span>
-<span id="cb5-5"><a href="#cb5-5"></a>        <span class="dt">monash.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">options</span>(<span class="at">monash.full_name =</span> <span class="st">"Emi Tanaka"</span>,</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>        <span class="at">monash.email =</span> <span class="st">"emi.tanaka@monash.edu"</span>,</span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>        <span class="at">monash.orgunit =</span> <span class="st">"Department of Econometrics and Business Statistics"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>        <span class="at">monash.teaching_dir =</span> <span class="st">"~/teaching/monash/"</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>        <span class="at">monash.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="teaching">Teaching<a class="anchor" aria-label="anchor" href="#teaching"></a>
@@ -147,34 +158,34 @@
 <p>(WIP) <code>create_teaching_directory("ETCXXXX")</code> would create a skeleton directory with folder and file structure below for development of teaching material. What is the advantage of this structure? It’s designed to be synced with a private github repository and the materials in the <code>release</code> folder are <em>automatically</em> pushed using Github Repository to the public github repository for public release. The website associated with it will be also be built automatically as well. The website format will closely resemble <a href="https://wcd.numbat.space/" class="external-link">ETC5512: Wild-Caught Data</a>.</p>
 <p>(WIP) <code>release_tutorial(1)</code> moves <code>tutorial-01.html</code> (and .Rmd) to the appropriate place in the <code>release</code> folder.</p>
 <p>(WIP) Tutorial, slides and other templates for teaching.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>├── ETCXXXX.Rproj</span>
-<span id="cb6-2"><a href="#cb6-2"></a>├── .git</span>
-<span id="cb6-3"><a href="#cb6-3"></a>├── data</span>
-<span id="cb6-4"><a href="#cb6-4"></a>│   └── data01.csv</span>
-<span id="cb6-5"><a href="#cb6-5"></a>├── lectures</span>
-<span id="cb6-6"><a href="#cb6-6"></a>│   ├── assets</span>
-<span id="cb6-7"><a href="#cb6-7"></a>│   │   ├── monash<span class="op">-</span>brand.css</span>
-<span id="cb6-8"><a href="#cb6-8"></a>│   │   └── monash<span class="op">-</span>font.css  </span>
-<span id="cb6-9"><a href="#cb6-9"></a>│   ├── images</span>
-<span id="cb6-10"><a href="#cb6-10"></a>│   │   ├── lecture<span class="dv">-01</span><span class="op">-</span>image01.png</span>
-<span id="cb6-11"><a href="#cb6-11"></a>│   │   └── lecture<span class="dv">-02</span><span class="op">-</span>image01.png  </span>
-<span id="cb6-12"><a href="#cb6-12"></a>│   ├── lecture<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-13"><a href="#cb6-13"></a>│   ├── lecture<span class="fl">-02.</span>Rmd</span>
-<span id="cb6-14"><a href="#cb6-14"></a>│   └── lecture<span class="fl">-03.</span>Rmd</span>
-<span id="cb6-15"><a href="#cb6-15"></a>├── tutorials</span>
-<span id="cb6-16"><a href="#cb6-16"></a>│   ├── images</span>
-<span id="cb6-17"><a href="#cb6-17"></a>│   │   ├── tutorial<span class="dv">-01</span><span class="op">-</span>image01.png</span>
-<span id="cb6-18"><a href="#cb6-18"></a>│   │   └── tutorial<span class="dv">-02</span><span class="op">-</span>image01.png </span>
-<span id="cb6-19"><a href="#cb6-19"></a>│   ├── tutorial<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-20"><a href="#cb6-20"></a>├── assessments</span>
-<span id="cb6-21"><a href="#cb6-21"></a>│   ├── assignment<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-22"><a href="#cb6-22"></a>│   └── quiz<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-23"><a href="#cb6-23"></a>├── release <span class="co"># for public release</span></span>
-<span id="cb6-24"><a href="#cb6-24"></a>│   ├── site</span>
-<span id="cb6-25"><a href="#cb6-25"></a>│   │   └── _site.yml</span>
-<span id="cb6-26"><a href="#cb6-26"></a>│   ├── data</span>
-<span id="cb6-27"><a href="#cb6-27"></a>│   ├── lectures</span>
-<span id="cb6-28"><a href="#cb6-28"></a>│   ├── tutorials</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>├── ETCXXXX.Rproj</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>├── .git</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>├── data</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>│   └── data01.csv</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>├── lectures</span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>│   ├── assets</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>│   │   ├── monash<span class="sc">-</span>brand.css</span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>│   │   └── monash<span class="sc">-</span>font.css  </span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a>│   ├── images</span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a>│   │   ├── lecture<span class="dv">-01</span><span class="sc">-</span>image01.png</span>
+<span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a>│   │   └── lecture<span class="dv">-02</span><span class="sc">-</span>image01.png  </span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a>│   ├── lecture<span class="fl">-01.</span>Rmd</span>
+<span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a>│   ├── lecture<span class="fl">-02.</span>Rmd</span>
+<span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a>│   └── lecture<span class="fl">-03.</span>Rmd</span>
+<span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a>├── tutorials</span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a>│   ├── images</span>
+<span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a>│   │   ├── tutorial<span class="dv">-01</span><span class="sc">-</span>image01.png</span>
+<span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a>│   │   └── tutorial<span class="dv">-02</span><span class="sc">-</span>image01.png </span>
+<span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a>│   ├── tutorial<span class="fl">-01.</span>Rmd</span>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a>├── assessments</span>
+<span id="cb7-21"><a href="#cb7-21" tabindex="-1"></a>│   ├── assignment<span class="fl">-01.</span>Rmd</span>
+<span id="cb7-22"><a href="#cb7-22" tabindex="-1"></a>│   └── quiz<span class="fl">-01.</span>Rmd</span>
+<span id="cb7-23"><a href="#cb7-23" tabindex="-1"></a>├── release <span class="co"># for public release</span></span>
+<span id="cb7-24"><a href="#cb7-24" tabindex="-1"></a>│   ├── site</span>
+<span id="cb7-25"><a href="#cb7-25" tabindex="-1"></a>│   │   └── _site.yml</span>
+<span id="cb7-26"><a href="#cb7-26" tabindex="-1"></a>│   ├── data</span>
+<span id="cb7-27"><a href="#cb7-27" tabindex="-1"></a>│   ├── lectures</span>
+<span id="cb7-28"><a href="#cb7-28" tabindex="-1"></a>│   ├── tutorials</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -198,8 +209,8 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Emi Tanaka <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-1455-259X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Rob Hyndman <br><small class="roles"> Author </small>  </li>
+<li>Emi Tanaka <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-1455-259X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Rob Hyndman <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-2140-5352" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
@@ -217,16 +228,16 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
 </div>
 
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>
