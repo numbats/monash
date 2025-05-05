@@ -13,6 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Please visit https://github.com/quarto-monash for latest versions of templates
+
 # monash
 
 <!-- badges: start -->
