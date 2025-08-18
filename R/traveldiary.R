@@ -49,7 +49,7 @@ render_travel_diary <- function(travel_diary, name, department = "Department of 
   )
   
   rmarkdown::render(
-    input = "inst/rmarkdown/templates/traveldiary/skeleton.Rmd",
+    input = system.file("rmarkdown/templates/traveldiary/skeleton.Rmd", package = "monash"),
     params = params,
     output_dir = output_path,
     output_file = output_file,
