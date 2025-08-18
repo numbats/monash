@@ -1,21 +1,24 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# Please visit <https://github.com/quarto-monash> for latest versions of templates
+
 # monash
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The `monash` R-package is a utility package with consolidated tools and
 templates for staffs at Monash University. The package contains three
 primary themes:
 
--   **workflow**: automating repetitive tasks, particularly teaching
-    related activities;
--   **template**: Monash branded R Markdown templates for teaching,
-    presentation, etc; and
--   **data**: easy access to relevant information (may require access
-    privileges).
+- **workflow**: automating repetitive tasks, particularly teaching
+  related activities;
+- **template**: Monash branded R Markdown templates for teaching,
+  presentation, etc; and
+- **data**: easy access to relevant information (may require access
+  privileges).
 
 ## Installation
 
@@ -82,6 +85,11 @@ and adding below with values modified to your own values.
             monash.orgunit = "Department of Econometrics and Business Statistics",
             monash.teaching_dir = "~/teaching/monash/",
             monash.workshop_dir = "~/workshop/")
+
+## Administration
+
+You can create a travel diary with the
+`create_simple_travel_diary() |> render_travel_diary()` workflow.
 
 ## Teaching
 
