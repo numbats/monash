@@ -1,0 +1,19 @@
+---
+title: "Business Travel Diary"
+output: 
+  pdf_document: default
+
+params:
+    department: "Department of Econometrics and Business Statistics"
+    name: "John Doe"
+    travel_diary: data.frame(Date = as.Date(c('2023-01-01', '2023-01-02', '2023-01-03')), Location = c('New York', 'Los Angeles', 'Chicago'), Activity = c('Meeting with client', 'Conference', 'Site visit'))
+---
+
+**Name**: `r params$name`
+
+**Department:** `r params$department`
+
+```{r, echo=FALSE}
+knitr::kable(params$travel_diary) |>
+    kableExtra::kable_styling(position = "left")
+```
