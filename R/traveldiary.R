@@ -34,7 +34,10 @@ create_simple_travel_diary <- function(start_date, end_date, start_city = "Melbo
 #' @param output_path The directory where the PDF will be saved (default is the current working directory).
 #' @param output_file The name of the output PDF file (without extension).
 #' 
+#' @examples
+#' create_simple_travel_diary(as.Date("2025-08-18"), as.Date("2025-09-01"), destination = "Perth", reason = "NUMBATS Conference") |> render_travel_diary(output_file = "test.pdf", name = "Michael")
 #' 
+#' @export
 render_travel_diary <- function(travel_diary, name, department = "Department of Econometrics and Business Statistics", output_path = getwd(), output_file, ...) {
   if (is.null(travel_diary)) {
     stop("Travel diary is empty.")

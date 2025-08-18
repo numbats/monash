@@ -27,3 +27,7 @@ render_travel_diary(
 \description{
 Renders a travel diary to a PDF file using R Markdown. The travel diary must be created with \code{\link[=create_simple_travel_diary]{create_simple_travel_diary()}}.
 }
+\examples{
+create_simple_travel_diary(as.Date("2025-08-18"), as.Date("2025-09-01"), destination = "Perth", reason = "NUMBATS Conference") |> render_travel_diary(output_file = "test.pdf", name = "Michael")
+
+}
