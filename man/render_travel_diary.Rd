@@ -23,11 +23,20 @@ render_travel_diary(
 \item{output_path}{The directory where the PDF will be saved (default is the current working directory).}
 
 \item{output_file}{The name of the output PDF file (without extension).}
+
+\item{...}{Additional arguments passed to \code{rmarkdown::render()}.}
 }
 \description{
 Renders a travel diary to a PDF file using R Markdown. The travel diary must be created with \code{\link[=create_simple_travel_diary]{create_simple_travel_diary()}}.
 }
 \examples{
-create_simple_travel_diary(as.Date("2025-08-18"), as.Date("2025-09-01"), destination = "Perth", reason = "NUMBATS Conference") |> render_travel_diary(output_file = "test.pdf", name = "Michael")
+if (interactive()) {
+diary <- create_simple_travel_diary(
+   start_date = as.Date("2025-08-18"), 
+   end_date = as.Date("2025-09-01"), 
+   destination = "Perth", 
+   reason = "NUMBATS Conference") |> 
+render_travel_diary(output_file = "test.pdf", name = "Michael")
+}
 
 }

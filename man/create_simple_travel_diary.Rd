@@ -31,6 +31,10 @@ Creates a simple travel diary (consisting of one destination) for a trip. Used i
 \code{\link[=render_travel_diary]{render_travel_diary()}} to generate a PDF travel diary for uploading.
 }
 \examples{
-create_simple_travel_diary(as.Date("2025-08-18"), as.Date("2025-09-01"), destination = "Perth", reason = "NUMBATS Conference")
+create_simple_travel_diary(
+  start_date = as.Date("2025-08-18"), 
+  end_date = as.Date("2025-09-01"), 
+  destination = "Perth", 
+  reason = "NUMBATS Conference")
 
 }
