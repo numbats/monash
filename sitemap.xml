@@ -7,6 +7,7 @@
 <url><loc>/authors.html</loc></url>
 <url><loc>/index.html</loc></url>
 <url><loc>/news/index.html</loc></url>
+<url><loc>/reference/create_simple_travel_diary.html</loc></url>
 <url><loc>/reference/index.html</loc></url>
 <url><loc>/reference/letter.html</loc></url>
 <url><loc>/reference/logo_get.html</loc></url>
@@ -14,6 +15,7 @@
 <url><loc>/reference/monash-package.html</loc></url>
 <url><loc>/reference/quarto_template.html</loc></url>
 <url><loc>/reference/release-functions.html</loc></url>
+<url><loc>/reference/render_travel_diary.html</loc></url>
 <url><loc>/reference/ui-questions.html</loc></url>
 <url><loc>/reference/ui.html</loc></url>
 <url><loc>/reference/zoom_attendance.html</loc></url>
