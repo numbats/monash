@@ -15,7 +15,11 @@ Authors@R:
       person(given = "Mitchell",
              family = "O'Hara-Wild",
              role = c("ctb"), 
-             comment = c(ORCID = "0000-0001-6729-7695")))
+             comment = c(ORCID = "0000-0001-6729-7695")),
+      person(given = "Michael",
+             family = "Lydeamore",
+             role = c("aut"), 
+             comment = c(ORCID = "0000-0001-6515-827X")))
 Description: Rmarkdown templates and other tools for use at Monash University, Department of Econometrics & Business Statistics.
 License: GPL-3
 Encoding: UTF-8

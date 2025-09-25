@@ -16,6 +16,7 @@ Rmarkdown templates and other tools for use at Monash University, Department of 
 Authors:
 \itemize{
   \item Emi Tanaka \email{dr.emi.tanaka@gmail.com} (\href{https://orcid.org/0000-0002-1455-259X}{ORCID})
+  \item Michael Lydeamore (\href{https://orcid.org/0000-0001-6515-827X}{ORCID})
 }
 
 Other contributors:
